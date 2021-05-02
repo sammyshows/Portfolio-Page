@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-item {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link {
+  padding-right: 4vw;
+}
