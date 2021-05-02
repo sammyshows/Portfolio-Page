@@ -44,17 +44,17 @@ p {
 
 .perspective-line:nth-child(2) {
   left: 58px;
-  background: #f07e6e;
+  background: #42f137;
 }
 
 .perspective-line:nth-child(3) {
   left: 87px;
-  background: #84cdfa;
+  background: #28daf7;
 }
 
 .perspective-line:nth-child(4) {
   left: 116px;
-  background: #5ad1cd;
+  background: #ff6496;
 }
 
 .perspective-line:nth-child(5) {

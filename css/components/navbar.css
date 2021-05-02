@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   width: 100%;
   height: 60px;
+  z-index: 10;
 }
 
 .navbar-nav {
@@ -14,8 +15,12 @@
   list-style: none;
 }
 
+.navbar-brand {
+  color: white !important;
+}
+
 .nav-link {
-  color: rgba(0, 0, 0) !important;
+  color: white !important;
 }
 
 .navbar-nav .nav-link {
