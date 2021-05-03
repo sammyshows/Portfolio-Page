@@ -1,7 +1,3 @@
-body {
-  overflow: hidden;
-}
-
 .perspective-text {
   color: white;
   font-family: Arial;
@@ -44,12 +40,12 @@ p {
 
 .perspective-line:nth-child(2) {
   left: 58px;
-  background: #42f137;
+  background: #37ef09;
 }
 
 .perspective-line:nth-child(3) {
   left: 87px;
-  background: #28daf7;
+  background: #41b0ff;
 }
 
 .perspective-line:nth-child(4) {

@@ -1,0 +1,14 @@
+.welcome-page {
+  background: radial-gradient(circle, rgb(39 39 39 / 71%) 0%, rgb(0 0 0 / 84%) 100%);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.projects-page {
+  height: 100vh;
+}

@@ -1,19 +1,4 @@
 @import url("components/navbar.css");
 @import url("components/typography.css");
 @import url("components/button.css");
-
-body {
-  background: radial-gradient(circle, rgb(39 39 39 / 56%) 0%, rgb(0 0 0 / 84%) 100%);
-}
-
-.welcome-page {
-/*  background: url(../images/train-station.jpg);*/
-/*  background-size: cover;*/
-  position: relative;
-  /*background: radial-gradient(circle, rgb(39 39 39 / 56%) 0%, rgb(0 0 0 / 84%) 100%);*/
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+@import url("components/pages.css");
