@@ -10,5 +10,18 @@
 }
 
 .projects-page {
+  background: radial-gradient(circle, rgb(39 39 39 / 71%) 0%, rgb(0 0 0 / 84%) 100%);
   height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.project-section {
+  text-align: center;
+}
+
+#projects-title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  color: white;
 }
