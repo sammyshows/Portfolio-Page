@@ -4,3 +4,9 @@
 @import url("components/pages.css");
 @import url("components/cards-grid.css");
 @import url("components/card.css");
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+  font-family: Arial;
+}
