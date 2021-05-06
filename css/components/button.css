@@ -23,7 +23,7 @@
 }
 #section07 a span {
   position: absolute;
-  bottom: 32px;
+  bottom: 48px;
   width: 24px;
   height: 24px;
   margin-left: -12px;
@@ -41,12 +41,12 @@
   animation-delay: 0s;
 }
 #section07 a span:nth-of-type(2) {
-  bottom: 48px;
+  bottom: 64px;
   -webkit-animation-delay: .15s;
   animation-delay: .15s;
 }
 #section07 a span:nth-of-type(3) {
-  bottom: 64px;
+  bottom: 80px;
   -webkit-animation-delay: .3s;
   animation-delay: .3s;
 }
