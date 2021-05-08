@@ -15,6 +15,16 @@ svg {
     animation: stroke-offset 5.5s infinite linear;
 }
 
+.welcome-title-box {
+  padding-bottom: 20vh;
+}
+
+#box-separator {
+  height: 1px;
+  width: 740px;
+  border: 1px #FDB731 solid;
+}
+
 .text-name:nth-child(1){
   stroke: #4D163D;
   animation-delay: -1;
@@ -36,6 +46,31 @@ svg {
 }
 
 .text-name:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+.text-title:nth-child(1){
+  stroke: #eb5e34;
+  animation-delay: -1;
+}
+
+.text-title:nth-child(2){
+  stroke: #ffea5e;
+  animation-delay: -2s;
+}
+
+.text-title:nth-child(3){
+  stroke: #ff4930;
+  animation-delay: -3s;
+}
+
+.text-title:nth-child(4){
+  stroke: #ff4930;
+  animation-delay: -4s;
+}
+
+.text-title:nth-child(5){
   stroke: #FDB731;
   animation-delay: -5s;
 }
