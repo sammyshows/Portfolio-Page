@@ -15,7 +15,14 @@ body {
 .projects-page {
   height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
 }
 
 .project-section {
