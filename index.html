@@ -5,7 +5,6 @@
   <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="jquery-3.5.1.min.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -19,7 +18,7 @@
   </nav>
 
   <div class="welcome-page">
-    <svg viewBox="0 0 1360 300">
+    <svg viewBox="0 0 1360 300" class="rellax" data-rellax-speed="2.5">
       <symbol id="s-text">
         <text text-anchor="middle" x="50%" y="80%">Sam McCarthy</text>
       </symbol>
@@ -33,14 +32,14 @@
       </g>
     </svg>
 
-    <div id="box-separator"></div>
+    <div id="box-separator" class="rellax" data-rellax-speed="1.5"></div>
 
-    <svg viewBox="0 0 2420 300" class="welcome-title-box">
+    <svg viewBox="0 0 2420 300" class="welcome-title-box rellax" data-rellax-speed="0.5">
       <symbol id="n-text">
         <text text-anchor="middle" x="50%" y="80%">Software Engineer</text>
       </symbol>
 
-      <g class = "g-ants">
+      <g class = "g-ants" data-rellax-speed="10">
         <use xlink:href="#n-text" class="text-copy text-title"></use>
         <use xlink:href="#n-text" class="text-copy text-title"></use>
         <use xlink:href="#n-text" class="text-copy text-title"></use>
@@ -81,5 +80,9 @@
   <div class="about-me-page">
     <h1 id="projects-title">Yours truly...</h1>
   </div>
+  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax');
+  </script>
 </body>
 </html>

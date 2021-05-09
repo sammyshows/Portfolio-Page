@@ -23,6 +23,7 @@ svg {
   height: 1px;
   width: 740px;
   border: 1px #FDB731 solid;
+  margin-bottom: 25px;
 }
 
 .text-name:nth-child(1){
