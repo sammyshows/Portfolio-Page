@@ -32,7 +32,9 @@ body {
 #projects-title {
   margin-bottom: 40px;
   font-size: 60px;
-  color: white;
+  background: -webkit-linear-gradient(90deg, rgba(255,73,48,1) 22%, rgba(253,183,49,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-me-page {
@@ -40,4 +42,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  background: -webkit-linear-gradient(90deg, rgba(255,73,48,1) 22%, rgba(253,183,49,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
