@@ -22,7 +22,7 @@ body {
 .projects-container {
   display: flex;
   flex-direction: column;
-  width: 75vw;
+  width: 65vw;
 }
 
 .project-section {
@@ -32,9 +32,7 @@ body {
 #projects-title {
   margin-bottom: 40px;
   font-size: 60px;
-  background: -webkit-linear-gradient(90deg, rgba(255,73,48,1) 22%, rgba(253,183,49,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 .about-me-page {
