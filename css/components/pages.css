@@ -2,6 +2,25 @@ body {
   background: #030321;
 }
 
+.page-index {
+  position: fixed;
+  top: 30vh;
+  left: 50px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.page-index h1 {
+  color: #FDB731;
+  font-size: 40px;
+}
+
+
+
+
+
 .welcome-page {
   position: relative;
   height: 100vh;
@@ -12,7 +31,70 @@ body {
   overflow: hidden;
 }
 
-.projects-page {
+
+
+
+.page-title {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.project-page {
+  height: 200vh;
+}
+
+.project-cards {
+  position: relative;
+}
+
+.project-card-togather {
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+.project-card-airdoor {
+  position: absolute;
+  top: 300px;
+  right: 0;
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+.project-card-airdoor {
+  position: absolute;
+  top: 300px;
+  right: 0;
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+.project-card img {
+  width: 800px;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-card img {
+  width: 800px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+/*.projects-page {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -33,7 +115,7 @@ body {
   margin-bottom: 40px;
   font-size: 60px;
   color: white;
-}
+}*/
 
 
 
