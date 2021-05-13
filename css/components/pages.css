@@ -98,8 +98,12 @@
   align-items: center;
 }
 
-.about-text-form {
+.about-text-form-section {
   width: 40%;
+}
+
+.about-text-form {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   margin-bottom: 7vh;
@@ -110,6 +114,7 @@
   width: 80%;
   border-left: none;
   font-size: 20px;
+  font-weight: 300;
   color: white;
   overflow: hidden;
 }

@@ -32,6 +32,11 @@ h3 {
   font-family: 'Raleway', sans-serif;
 }
 
+h5 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
 input[type='radio'] {
   transform: scale(1.5);
  }
