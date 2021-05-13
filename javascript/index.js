@@ -31,6 +31,17 @@ const projectsTitleScroll = () => {
   });
 }
 
+const contactTitleScroll = () => {
+  const contactTitle = document.querySelector('#contact-page-title');
+  const contactPage = document.querySelector('.contact-page');
+  contactTitle.addEventListener('click', function() {
+    window.scrollTo({
+      top: contactPage.offsetTop,
+      behavior: 'smooth',
+    });
+  });
+}
+
 const textLengthCleaner = () => {
   const textLengthEls = document.querySelectorAll('.text-length');
   textLengthEls.forEach(textLengthEl => {
