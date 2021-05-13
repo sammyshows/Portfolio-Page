@@ -1,4 +1,5 @@
 const arrowButtonScroll = () => {
+  const navAbout = document.querySelector('#navbar-about-link');
   const arrowButton = document.querySelector('.arrow-button');
   const aboutPage = document.querySelector('.about-page');
   arrowButton.addEventListener('click', function() {
@@ -7,6 +8,13 @@ const arrowButtonScroll = () => {
       behavior: 'smooth',
     });
   });
+  navAbout.addEventListener('click', function() {
+    window.scrollTo({
+      top: aboutPage.offsetTop + 50,
+      behavior: 'smooth',
+    });
+  });
+
 }
 
 const aboutTitleScroll = () => {
@@ -14,13 +22,14 @@ const aboutTitleScroll = () => {
   const aboutPage = document.querySelector('.about-page');
   aboutTitle.addEventListener('click', function() {
     window.scrollTo({
-      top: aboutPage.offsetTop+50,
+      top: aboutPage.offsetTop + 50,
       behavior: 'smooth',
     });
   });
 }
 
 const projectsTitleScroll = () => {
+  const navProject = document.querySelector('#navbar-project-link');
   const projectsTitle = document.querySelector('#projects-page-title');
   const projectPage = document.querySelector('.project-page');
   projectsTitle.addEventListener('click', function() {
@@ -29,12 +38,25 @@ const projectsTitleScroll = () => {
       behavior: 'smooth',
     });
   });
+    navProject.addEventListener('click', function() {
+    window.scrollTo({
+      top: projectPage.offsetTop,
+      behavior: 'smooth',
+    });
+  });
 }
 
 const contactTitleScroll = () => {
+  const navContact = document.querySelector('#navbar-contact-link');
   const contactTitle = document.querySelector('#contact-page-title');
   const contactPage = document.querySelector('.contact-page');
   contactTitle.addEventListener('click', function() {
+    window.scrollTo({
+      top: contactPage.offsetTop,
+      behavior: 'smooth',
+    });
+  });
+    navContact.addEventListener('click', function() {
     window.scrollTo({
       top: contactPage.offsetTop,
       behavior: 'smooth',
