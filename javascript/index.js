@@ -1,3 +1,14 @@
+const arrowButtonScroll = () => {
+  const arrowButton = document.querySelector('.arrow-button');
+  const aboutPage = document.querySelector('.about-page');
+  arrowButton.addEventListener('click', function() {
+    window.scrollTo({
+      top: aboutPage.offsetTop,
+      behavior: 'smooth',
+    });
+  });
+}
+
 const textLengthCleaner = () => {
   const textLengthEls = document.querySelectorAll('.text-length');
   textLengthEls.forEach(textLengthEl => {
