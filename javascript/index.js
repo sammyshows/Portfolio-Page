@@ -1,5 +1,8 @@
-const textLengthSelector = () => {
-  console.log('hello')
+const textLengthCleaner = () => {
+  const textLengthEls = document.querySelectorAll('.text-length');
+  textLengthEls.forEach(textLengthEl => {
+    textLengthEl.setAttribute("style", "display: none;");
+  });
 }
 
-textLengthSelector()
+textLengthCleaner()
