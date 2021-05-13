@@ -1,8 +1,9 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  position: absolute;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 60px;
   z-index: 10;

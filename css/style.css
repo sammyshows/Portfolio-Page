@@ -7,6 +7,17 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-body{
-  font-family: Arial;
+body {
+  background: #0A192E;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
 }
