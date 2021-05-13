@@ -37,6 +37,7 @@ body {
 .page-title {
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 
@@ -49,46 +50,57 @@ body {
   position: relative;
 }
 
+.projects-line {
+  height: 195vh;
+  margin-top: 100px;
+  border-left: 1px white dashed;
+  position: absolute;
+  left: 50%;
+}
+
 .project-card-togather {
-  height: 600px;
+  position: absolute;
+  top: 100px;
+  height: 60vh;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
-  margin-top: 100px;
 }
 
 .project-card-airdoor {
   position: absolute;
-  top: 300px;
+  top: 55vh;
   right: 0;
-  height: 600px;
+  height: 60vh;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 100px;
 }
 
-.project-card-airdoor {
+.project-card-investing-app {
   position: absolute;
-  top: 300px;
+  top: 100vh;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.project-card-nba-app {
+  position: absolute;
+  top: 145vh;
   right: 0;
-  height: 600px;
+  height: 60vh;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 100px;
 }
 
 .project-card img {
-  width: 800px;
-  height: auto;
+  width: 40%;
+  height: 100%;
   object-fit: cover;
 }
-
-.project-card img {
-  width: 800px;
-  height: auto;
-  object-fit: cover;
-}
-
-
 
 
 
