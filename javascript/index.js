@@ -5,4 +5,6 @@ const textLengthCleaner = () => {
   });
 }
 
-textLengthCleaner()
+const smallestText = (radioOne) => {
+  textLengthCleaner();
+}
