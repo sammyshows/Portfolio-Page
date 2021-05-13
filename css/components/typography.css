@@ -1,81 +1,67 @@
-svg {
-    display: block;
-    font: 10.5em 'Montserrat';
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css?family=Amaranth:700,400&display=swap');
+
+.r-link{
+  font-family: 'Raleway', sans-serif;
+  --uirLinkDisplay: var(--rLinkDisplay, inline-block);
+  --uirLinkTextColor: var(--rLinkTextColor);
+  --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+
+  display: var(--uirLinkDisplay) !important;
+  text-decoration: var(--uirLinkTextDecoration) !important;
 }
 
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
+.animated-underline{
+  --uiAnimatedUnderlineWidth: var(--animatedUnderlineWidth, 100%);
+  --uiAnimatedUnderlineHeight: var(--animatedUnderlineHeight, 2px);
+  --uiAnimatedUnderlineBgColor: var(--animatedUnderlineBgColor, currentColor);
+  --uiAnimatedUnderlinePositionX: var(--animatedUnderlinePositionX, left);
+  --uiAnimatedUnderlinePositionY: var(--animatedUnderlinePositionY, bottom);
+
+  /*
+    1. For multi-line animated underline the "inline" value for the display property is compulsory.
+    2. Adds opportunity to create multi-line padding
+  */
+
+  --rLinkDisplay: inline; /* 1 */
+
+  background-image: linear-gradient(0, var(--uiAnimatedUnderlineBgColor) 0, var(--uiAnimatedUnderlineBgColor));
+  background-size: var(--uiAnimatedUnderlineWidth) var(--uiAnimatedUnderlineHeight);
+  background-position: var(--uiAnimatedUnderlinePositionX) var(--uiAnimatedUnderlinePositionY);
+  background-repeat: no-repeat;
+
+  -webkit-box-decoration-break: clone; /* 2 */
+  box-decoration-break: clone; /* 2 */
+
+  will-change: background-size;
+  transition: background-size .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.welcome-title-box {
-  padding-bottom: 20vh;
+/*
+=====
+SETTINGS
+=====
+*/
+
+:root{
+  --animatedUnderlineHeight: 1rem;
+  --animatedUnderlineBgColor: #eb5e34;
 }
 
-#box-separator {
-  height: 1px;
-  width: 740px;
-  border: 1px #FDB731 solid;
-  margin-bottom: 25px;
+.animated-underline_type5{
+  --animatedUnderlineWidth: 100%;
+  --animatedUnderlineHeight: 20px;
+  --animatedUnderlinePositionY: 90%;
 }
 
-.text-name:nth-child(1){
-  stroke: #4D163D;
-  animation-delay: -1;
+.animated-underline_type5:hover{
+  --animatedUnderlineHeight: 2.5rem;
 }
 
-.text-name:nth-child(2){
-  stroke: #840037;
-  animation-delay: -2s;
+.animated-underline_type4{
+  --animatedUnderlineWidth: 0;
+  --animatedUnderlineHeight: 1px;
 }
 
-.text-name:nth-child(3){
-  stroke: #BD0034;
-  animation-delay: -3s;
-}
-
-.text-name:nth-child(4){
-  stroke: #BD0034;
-  animation-delay: -4s;
-}
-
-.text-name:nth-child(5){
-  stroke: #FDB731;
-  animation-delay: -5s;
-}
-
-.text-title:nth-child(1){
-  stroke: #eb5e34;
-  animation-delay: -1;
-}
-
-.text-title:nth-child(2){
-  stroke: #ffea5e;
-  animation-delay: -2s;
-}
-
-.text-title:nth-child(3){
-  stroke: #ff4930;
-  animation-delay: -3s;
-}
-
-.text-title:nth-child(4){
-  stroke: #ff4930;
-  animation-delay: -4s;
-}
-
-.text-title:nth-child(5){
-  stroke: #FDB731;
-  animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-  100% {stroke-dashoffset: -35%;}
+.animated-underline_type4:hover{
+  --animatedUnderlineWidth: 100%;
 }
