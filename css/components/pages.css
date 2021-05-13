@@ -86,8 +86,34 @@
   align-items: center;
 }
 
-#about-image {
-  height: 50vh;
+.about-image-content {
+  position: relative;
+}
+
+.about-image-content img {
+  height: 40vh;
+  border-radius: 4px;
+}
+
+.about-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ff3c00;
+  opacity: 0.3;
+  transition: all 0.9s ease;
+}
+
+.about-image-border {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 6px;
+  border: 3px #eb5e34 solid;
 }
 
 .about-me-text {
@@ -148,18 +174,18 @@
   align-items: center;
 }
 
-.image-content {
+.project-image-content {
   position: relative;
 }
 
-.image-content img {
+.project-image-content img {
   width: 76vh;
   height: 38vh;
   object-fit: cover;
   border-radius: 4px;
 }
 
-.image-overlay {
+.project-image-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -170,7 +196,7 @@
   transition: all 0.9s ease;
 }
 
-.image-overlay:hover {
+.project-image-overlay:hover {
   opacity: 0;
 }
 
