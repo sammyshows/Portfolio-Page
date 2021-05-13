@@ -1,7 +1,3 @@
-body {
-  background: #030321;
-}
-
 .page-index {
   position: fixed;
   top: 30vh;
@@ -25,10 +21,13 @@ body {
   position: relative;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+}
+
+.welcome-container {
+  height: 50%;
+  width: 70%;
 }
 
 
