@@ -65,7 +65,7 @@
 
 
 .about-page {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +73,7 @@
 }
 
 .about-container {
+  height: 50%;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -93,6 +94,7 @@
 .about-image-content img {
   height: 40vh;
   border-radius: 4px;
+  z-index: 1;
 }
 
 .about-image-overlay {
@@ -104,14 +106,15 @@
   background: #ff3c00;
   opacity: 0.3;
   transition: all 0.9s ease;
+  z-index: 2;
 }
 
 .about-image-border {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 4vh;
+  left: 4vh;
+  height: 100%;
+  width: 100%;
   border-radius: 6px;
   border: 3px #eb5e34 solid;
 }
@@ -119,31 +122,11 @@
 .about-me-text {
   position: relative;
   width: 70%;
-  height: 60vh;
   border-left: none;
   padding: 70px 100px;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   overflow: hidden;
-}
-
-#about-me-open-quote {
-  width: 40px;
-  height: auto;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  color: white;
-}
-
-#about-me-close-quote {
-  width: 40px;
-  height: auto;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  color: white;
-  transform: rotate(180deg);
 }
 
 
