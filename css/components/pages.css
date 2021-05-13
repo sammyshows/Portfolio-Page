@@ -86,7 +86,7 @@
   right: 0;
   background: rgb(235,94,53);
   opacity: 0.8;
-  transition: all 0.8s ease;
+  transition: all 0.9s ease;
 }
 
 .image-overlay:hover {
@@ -112,9 +112,11 @@
   background-color: #18355e;
   width: 28vw;
   height: auto;
+  max-height: 27vh;
   padding: 20px 30px 20px 50px;
   border-radius: 4px;
   z-index: 2;
+  overflow: hidden;
 }
 
 .project-text-right {
@@ -122,9 +124,11 @@
   background-color: #18355e;
   width: 28vw;
   height: auto;
+  max-height: 27vh;
   padding: 20px 50px 20px 30px;
   border-radius: 4px;
   z-index: 2;
+  overflow: hidden;
 }
 
 .project-links {
