@@ -204,6 +204,9 @@
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #eb5e34;
   opacity: 0.8;
   transition: all 0.9s ease;

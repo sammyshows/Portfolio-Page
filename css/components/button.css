@@ -16,7 +16,13 @@
 }
 */
 
-
+.arrow-button {
+  position: absolute;
+  bottom: 30px;
+  left: 48.5%;
+  height: 70px;
+  width: 48px;
+}
 
 #section07 a {
   padding-top: 80px;
