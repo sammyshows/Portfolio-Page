@@ -3,7 +3,29 @@ const arrowButtonScroll = () => {
   const aboutPage = document.querySelector('.about-page');
   arrowButton.addEventListener('click', function() {
     window.scrollTo({
-      top: aboutPage.offsetTop,
+      top: aboutPage.offsetTop + 80,
+      behavior: 'smooth',
+    });
+  });
+}
+
+const aboutTitleScroll = () => {
+  const aboutTitle = document.querySelector('#about-page-title');
+  const aboutPage = document.querySelector('.about-page');
+  aboutTitle.addEventListener('click', function() {
+    window.scrollTo({
+      top: aboutPage.offsetTop+80,
+      behavior: 'smooth',
+    });
+  });
+}
+
+const projectsTitleScroll = () => {
+  const projectsTitle = document.querySelector('#projects-page-title');
+  const projectPage = document.querySelector('.project-page');
+  projectsTitle.addEventListener('click', function() {
+    window.scrollTo({
+      top: projectPage.offsetTop,
       behavior: 'smooth',
     });
   });
