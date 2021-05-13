@@ -118,10 +118,10 @@
 
 .about-text {
   position: relative;
-  width: 80%;
+  width: 70%;
   border-left: none;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 400;
   color: white;
   overflow: hidden;
 }
