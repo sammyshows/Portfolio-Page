@@ -3,7 +3,7 @@ const arrowButtonScroll = () => {
   const aboutPage = document.querySelector('.about-page');
   arrowButton.addEventListener('click', function() {
     window.scrollTo({
-      top: aboutPage.offsetTop + 80,
+      top: aboutPage.offsetTop + 50,
       behavior: 'smooth',
     });
   });
@@ -14,7 +14,7 @@ const aboutTitleScroll = () => {
   const aboutPage = document.querySelector('.about-page');
   aboutTitle.addEventListener('click', function() {
     window.scrollTo({
-      top: aboutPage.offsetTop+80,
+      top: aboutPage.offsetTop+50,
       behavior: 'smooth',
     });
   });

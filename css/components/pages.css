@@ -19,6 +19,10 @@
   margin-bottom: 5vh;
 }
 
+.page-title h1:hover {
+  cursor: pointer;
+}
+
 .page-title::before {
   content: "";
   display: block;
@@ -41,6 +45,35 @@
   background-color: #eb5e34;
 }
 
+
+.icon-links-fixed {
+  position: fixed;
+  left: 5vw;
+  bottom: 0vh;
+  z-index: 10;
+}
+
+.icon-links {
+  height: 23vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.icon-links-fixed::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -105%;
+  right: -3.8vw;
+  height: 15vh;
+  width: 1px;
+  background-color: #eb5e34;
+}
+
+
+
 .email-fixed p {
   position: fixed;
   right: 5vw;
@@ -54,11 +87,14 @@
   display: block;
   position: relative;
   bottom: -105%;
-  right: 1.8vh;
+  right: 1.9vh;
   height: 15vh;
   width: 1px;
   background-color: #eb5e34;
 }
+
+
+
 
 
 
@@ -358,16 +394,45 @@
 
 
 .contact-page {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#contact-title {
-  margin-bottom: 40px;
-  font-size: 60px;
-  background: -webkit-linear-gradient(90deg, rgba(255,73,48,1) 22%, rgba(253,183,49,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.contact-container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.contact-text {
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact-button {
+  padding: 10px 30px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  border: 1px #eb5e34 solid;
+  background: #0A192E;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 5vh;
+}
+
+.contact-button:hover {
+  background: #eb5e34;
+}
+
+
+
+
+
+
+
