@@ -16,8 +16,29 @@
 .page-title {
   display: flex;
   justify-content: center;
-  color: white;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
+}
+
+.page-title::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3vh;
+  width: 300px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: grey;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3vh;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: grey;
 }
 
 
@@ -107,12 +128,19 @@
   justify-content: flex-end;
 }
 
+.project-text {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .project-text-left {
-  margin-left: -7vw;
+  margin-left: -9vw;
   background-color: #18355e;
   width: 28vw;
   height: auto;
-  max-height: 27vh;
+  max-height: 12vh;
   padding: 20px 30px 20px 50px;
   border-radius: 4px;
   z-index: 2;
@@ -120,11 +148,11 @@
 }
 
 .project-text-right {
-  margin-right: -7vw;
+  margin-right: -9vw;
   background-color: #18355e;
   width: 28vw;
   height: auto;
-  max-height: 27vh;
+  max-height: 12vh;
   padding: 20px 50px 20px 30px;
   border-radius: 4px;
   z-index: 2;
@@ -144,8 +172,35 @@
   width: 5vh;
 }
 
+.project-skills-left {
+  position: absolute;
+  width: 100%;
+  min-width: 100%;
+  bottom: 2vh;
+  right: -4vh;
+  text-align: end;
+}
 
+.project-skills-right {
+  position: absolute;
+  width: 100%;
+  min-width: 100%;
+  bottom: 2vh;
+  left: -4vh;
+  text-align: start;
+}
 
+.project-title-left {
+  position: absolute;
+  top: 2vh;
+  right: -4vh;
+}
+
+.project-title-right {
+  position: absolute;
+  top: 2vh;
+  left: -4vh;
+}
 
 /*.projects-page {
   height: 100vh;
