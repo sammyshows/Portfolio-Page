@@ -1,7 +1,7 @@
 .page-index {
   position: fixed;
   top: 30vh;
-  left: 50px;
+  right: 100px;
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -9,10 +9,16 @@
 }
 
 .page-index h1 {
-  color: #FDB731;
+  color: #eb5e34;
   font-size: 40px;
 }
 
+.page-title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 10vh;
+}
 
 
 
@@ -27,80 +33,112 @@
 
 .welcome-container {
   height: 50%;
-  width: 70%;
-}
-
-
-
-
-.page-title {
+  width: 65%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  color: white;
+  align-items: flex-start;
 }
+
+
 
 
 
 .project-page {
-  height: 200vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+  width: 65%;
 }
 
 .project-cards {
+
+}
+
+.project-card {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8.5vh;
+  display: flex;
+  align-items: center;
+}
+
+.image-content {
   position: relative;
 }
 
-.projects-line {
-  height: 195vh;
-  margin-top: 100px;
-  border-left: 1px white dashed;
-  position: absolute;
-  left: 50%;
-}
-
-.project-card-togather {
-  position: absolute;
-  top: 100px;
-  height: 60vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.project-card-airdoor {
-  position: absolute;
-  top: 55vh;
-  right: 0;
-  height: 60vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.project-card-investing-app {
-  position: absolute;
-  top: 100vh;
-  height: 60vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.project-card-nba-app {
-  position: absolute;
-  top: 145vh;
-  right: 0;
-  height: 60vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.project-card img {
-  width: 40%;
-  height: 100%;
+.image-content img {
+  width: 76vh;
+  height: 38vh;
   object-fit: cover;
+  border-radius: 4px;
 }
 
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(235,94,53);
+  opacity: 0.8;
+  transition: all 0.8s ease;
+}
+
+.image-overlay:hover {
+  opacity: 0;
+}
+
+.project-card-left {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.project-card-right {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-text-left {
+  margin-left: -7vw;
+  background-color: #18355e;
+  width: 28vw;
+  height: auto;
+  padding: 20px 30px 20px 50px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.project-text-right {
+  margin-right: -7vw;
+  background-color: #18355e;
+  width: 28vw;
+  height: auto;
+  padding: 20px 50px 20px 30px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.project-links {
+  height: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.iconify {
+  height: 5vh;
+  width: 5vh;
+}
 
 
 
