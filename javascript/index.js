@@ -64,6 +64,18 @@ const contactTitleScroll = () => {
   });
 }
 
+const homePageScroll = () => {
+  const brandImage = document.querySelector('.brand-image');
+  const welcomePage = document.querySelector('.welcome-page');
+  brandImage.addEventListener('click', function() {
+    window.scrollTo({
+      top: welcomePage.offsetTop,
+      behavior: 'smooth',
+    });
+  });
+}
+
+
 const textLengthCleaner = () => {
   const textLengthEls = document.querySelectorAll('.text-length');
   textLengthEls.forEach(textLengthEl => {

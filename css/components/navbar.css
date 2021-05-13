@@ -1,11 +1,12 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 10vh;
   z-index: 10;
+  transition: 0.8s;
 }
 
 .navbar-nav {
@@ -16,10 +17,6 @@
 }
 
 .navbar-brand {
-  color: white !important;
-}
-
-.nav-link {
   color: white !important;
 }
 

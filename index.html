@@ -11,15 +11,16 @@
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <script src="javascript/index.js"></script>
 </head>
-<body onload="arrowButtonScroll(); aboutTitleScroll(); projectsTitleScroll(); contactTitleScroll();">
-  <nav class="navbar navbar-light">
-    <div class="brand-image">
+<body onload="arrowButtonScroll(); aboutTitleScroll(); projectsTitleScroll(); contactTitleScroll(); homePageScroll();">
+  <nav id="navbar" class="navbar navbar-light">
+    <div class="brand-image" style="cursor: pointer;">
       <img src="images/sam_brand.png" alt="">
     </div>
     <div class="navbar-nav">
-      <a class="nav-item nav-link r-link animated-underline animated-underline_type4" id="navbar-about-link" style="font-weight: 100" href="#">About</a>
-      <a class="nav-item nav-link r-link animated-underline animated-underline_type4" id="navbar-project-link" style="font-weight: 100" href="#">Projects</a>
-      <a class="nav-item nav-link r-link animated-underline animated-underline_type4" id="navbar-contact-link" style="font-weight: 100" href="#">Contact</a>
+      <a class="nav-item nav-link r-link animated-underline animated-underline_type4" id="navbar-about-link" style="font-weight: 100; color:#eb5e34;" href="#">About</a>
+      <a class="nav-item nav-link r-link animated-underline animated-underline_type4" id="navbar-project-link" style="font-weight: 100; color:#eb5e34;" href="#">Projects</a>
+      <a class="nav-item nav-link r-link animated-underline animated-underline_type4" id="navbar-contact-link" style="font-weight: 100; color:#eb5e34;" href="#">Contact</a>
+      <a class="nav-item nav-link r-link animated-underline animated-underline_type4" id="navbar-contact-link" style="font-weight: 100; color: white;" href="#">Resume</a>
     </div>
   </nav>
 
@@ -223,6 +224,19 @@
   <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
   <script>
     var rellax = new Rellax('.rellax');
+  </script>
+
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-15vh";
+    }
+    prevScrollpos = currentScrollPos;
+  }
   </script>
 </body>
 </html>
