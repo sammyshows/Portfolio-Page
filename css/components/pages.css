@@ -106,7 +106,14 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 7vh;
+  margin-bottom: 3.5vh;
+}
+
+.text-size-options {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh;
 }
 
 .about-text {
