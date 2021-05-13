@@ -41,6 +41,25 @@
   background-color: #eb5e34;
 }
 
+.email-fixed p {
+  position: fixed;
+  right: 5vw;
+  bottom: 13vh;
+  writing-mode: vertical-lr;
+  text-orientation: left;
+}
+
+.email-fixed p::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -105%;
+  right: 1.8vh;
+  height: 15vh;
+  width: 1px;
+  background-color: #eb5e34;
+}
+
 
 
 
