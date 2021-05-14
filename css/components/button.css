@@ -90,4 +90,26 @@
     opacity: 0;
   }
 }
-1
+
+
+
+
+.contact-button {
+  padding: 10px 30px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  border: 1px #eb5e34 solid;
+  background: #0A192E;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 5vh;
+  box-shadow: 0 0 15px rgba(0,0,0,0.35);
+}
+
+.contact-button:hover {
+  background: #eb5e34;
+}
+
+
+
