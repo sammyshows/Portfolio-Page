@@ -80,7 +80,7 @@
 .email-fixed p {
   position: fixed;
   right: 5vw;
-  bottom: 13vh;
+  bottom: 16vh;
   writing-mode: vertical-lr;
   text-orientation: left;
   z-index: 10;
@@ -90,7 +90,7 @@
   content: "";
   display: block;
   position: relative;
-  bottom: -105%;
+  bottom: -115%;
   right: 1.9vh;
   height: 15vh;
   width: 1px;
@@ -109,6 +109,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #0a192f;
 }
 
 .welcome-container {
@@ -129,6 +130,7 @@
   justify-content: center;
   align-items: center;
   margin-top: -5vh;
+  background: #0a192f;
 }
 
 .about-container {
@@ -178,13 +180,22 @@
 
 .about-text {
   position: relative;
-  height: 30vh;
-  max-height: 60vh;
+  height: 36vh;
+  max-height: 50vh;
   width: 70%;
   font-size: 17px;
   font-weight: 400;
   color: white;
   overflow: hidden;
+  text-align: justify;
+}
+
+.skills-text {
+  width: 70%;
+}
+
+.skills-text p {
+  text-align: justify;
 }
 
 .about-image-content {
@@ -230,6 +241,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #0a192f;
 }
 
 .project-container {
@@ -304,7 +316,7 @@
   background-color: #18355e;
   width: 28vw;
   height: auto;
-  max-height: 12vh;
+  max-height: 16vh;
   padding: 20px 30px 20px 50px;
   border-radius: 4px;
   z-index: 2;
@@ -317,7 +329,7 @@
   background-color: #18355e;
   width: 28vw;
   height: auto;
-  max-height: 12vh;
+  max-height: 16vh;
   padding: 20px 50px 20px 30px;
   border-radius: 4px;
   z-index: 2;
@@ -407,6 +419,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #0a192f;
 }
 
 .contact-container {

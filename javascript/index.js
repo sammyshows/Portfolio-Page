@@ -3,7 +3,7 @@ const arrowButtonScroll = () => {
   const aboutPage = document.querySelector('.about-page');
   arrowButton.addEventListener('click', function() {
     window.scrollTo({
-      top: aboutPage.offsetTop + 55,
+      top: aboutPage.offsetTop + 30,
       behavior: 'smooth',
     });
   });
@@ -15,14 +15,14 @@ const aboutTitleScroll = () => {
   const aboutPage = document.querySelector('.about-page');
   aboutTitle.addEventListener('click', function() {
     window.scrollTo({
-      top: aboutPage.offsetTop + 55,
+      top: aboutPage.offsetTop + 30,
       behavior: 'smooth',
     });
   });
   navAbout.addEventListener('click', function() {
     setTimeout(function () {
       window.scrollTo({
-        top: aboutPage.offsetTop + 55,
+        top: aboutPage.offsetTop + 30,
         behavior: 'smooth',
       });
     },2);

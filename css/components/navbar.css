@@ -1,12 +1,15 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 10vh;
+  height: 14vh;
   z-index: 10;
-  transition: 0.8s;
+  transition: 0.7s;
+  background: rgba(10, 25, 47, 0.8);
+  backdrop-filter: blur(5px);
 }
 
 .navbar-nav {
@@ -25,9 +28,11 @@
 }
 
 .brand-image {
-  margin-top: 2vh;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .brand-image img {
-  width: 10vw;
+  height: 85%;
 }
