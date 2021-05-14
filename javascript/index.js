@@ -1,30 +1,31 @@
 const arrowButtonScroll = () => {
-  const navAbout = document.querySelector('#navbar-about-link');
   const arrowButton = document.querySelector('.arrow-button');
   const aboutPage = document.querySelector('.about-page');
   arrowButton.addEventListener('click', function() {
     window.scrollTo({
-      top: aboutPage.offsetTop + 50,
+      top: aboutPage.offsetTop + 55,
       behavior: 'smooth',
     });
   });
-  navAbout.addEventListener('click', function() {
-    window.scrollTo({
-      top: aboutPage.offsetTop + 50,
-      behavior: 'smooth',
-    });
-  });
-
 }
 
 const aboutTitleScroll = () => {
+  const navAbout = document.querySelector('#navbar-about-link');
   const aboutTitle = document.querySelector('#about-page-title');
   const aboutPage = document.querySelector('.about-page');
   aboutTitle.addEventListener('click', function() {
     window.scrollTo({
-      top: aboutPage.offsetTop + 50,
+      top: aboutPage.offsetTop + 55,
       behavior: 'smooth',
     });
+  });
+  navAbout.addEventListener('click', function() {
+    setTimeout(function () {
+      window.scrollTo({
+        top: aboutPage.offsetTop + 55,
+        behavior: 'smooth',
+      });
+    },2);
   });
 }
 
@@ -38,11 +39,13 @@ const projectsTitleScroll = () => {
       behavior: 'smooth',
     });
   });
-    navProject.addEventListener('click', function() {
-    window.scrollTo({
-      top: projectPage.offsetTop,
-      behavior: 'smooth',
-    });
+  navProject.addEventListener('click', function() {
+    setTimeout(function () {
+      window.scrollTo({
+        top: projectPage.offsetTop,
+        behavior: 'smooth',
+      });
+    },2);
   });
 }
 
@@ -56,11 +59,13 @@ const contactTitleScroll = () => {
       behavior: 'smooth',
     });
   });
-    navContact.addEventListener('click', function() {
-    window.scrollTo({
-      top: contactPage.offsetTop,
-      behavior: 'smooth',
-    });
+  navContact.addEventListener('click', function() {
+    setTimeout(function () {
+      window.scrollTo({
+        top: contactPage.offsetTop,
+        behavior: 'smooth',
+      });
+    },2);
   });
 }
 
