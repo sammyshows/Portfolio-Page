@@ -18,6 +18,9 @@
   justify-content: center;
   margin-bottom: 5vh;
 }
+.page-title h1 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
 
 .page-title h1:hover {
   cursor: pointer;
@@ -306,6 +309,7 @@
   border-radius: 4px;
   z-index: 2;
   overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.35);
 }
 
 .project-text-right {
@@ -318,6 +322,7 @@
   border-radius: 4px;
   z-index: 2;
   overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.35);
 }
 
 .project-links {
@@ -355,12 +360,14 @@
   position: absolute;
   top: 2vh;
   right: -4vh;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .project-title-right {
   position: absolute;
   top: 2vh;
   left: -4vh;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 /*.projects-page {
@@ -426,6 +433,7 @@
   transition: 0.5s;
   cursor: pointer;
   margin-top: 5vh;
+  box-shadow: 0 0 15px rgba(0,0,0,0.35);
 }
 
 .contact-button:hover {
