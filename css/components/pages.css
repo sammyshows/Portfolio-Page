@@ -113,13 +113,63 @@
 }
 
 .welcome-container {
-  height: 50%;
+  height: 50vh;
   width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+  .welcome-first {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #eb5e34;
+  }
+
+  .welcome-name {
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  .welcome-quote {
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 10px;
+  }
+
+  .welcome-intro {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width : 1000px) and (max-device-width : 2240px) {
+  .welcome-first {
+    font-size: 2.5vh;
+    margin-bottom: 10px;
+    color: #eb5e34;
+  }
+
+  .welcome-name {
+    font-size: 10vh;
+    font-weight: 100;
+  }
+
+  .welcome-quote {
+    font-size: 8vh;
+    font-weight: 100;
+    margin-top: 10px;
+  }
+
+  .welcome-intro {
+    width: 50%;
+    margin-top: 20px;
+  }
+}
+
 
 
 
