@@ -139,6 +139,10 @@
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+  .welcome-page {
+    height: 95vh;
+  }
+
   .welcome-first {
     font-size: 17px;
     margin-bottom: 10px;
@@ -281,6 +285,7 @@
 
   .skills-text {
     width: 70vw;
+    margin-top: 20px;
   }
 
   .about-text-form-section {
@@ -352,10 +357,6 @@
 
 .project-container {
   width: 65%;
-}
-
-.project-cards {
-
 }
 
 .project-card {
@@ -501,19 +502,21 @@
   }
 
   .project-card {
-    margin-bottom: 12vh;
+    margin: 2vh 0 6vh 0;
   }
 
   .nba-project-card {
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
   }
 
   .project-card-left {
     flex-direction: column;
+    height: auto;
   }
 
   .project-card-right {
     flex-direction: column-reverse;
+    height: auto;
   }
 
   .project-image-content {
