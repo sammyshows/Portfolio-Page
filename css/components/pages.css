@@ -99,6 +99,16 @@
   background-color: #eb5e34;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+  .icon-links-fixed {
+    visibility: hidden;
+  }
+
+  .email-fixed {
+    visibility: hidden;
+  }
+}
+
 
 
 
@@ -376,6 +386,11 @@
   opacity: 0;
 }
 
+.project-image-overlay {
+  font-size: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
 .project-card-left {
   height: 40vh;
   width: 100%;
@@ -468,34 +483,107 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-/*.projects-page {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+  .project-card {
+    margin-bottom: 12vh;
+  }
+
+  .nba-project-card {
+    margin-bottom: 4vh;
+  }
+
+  .project-card-left {
+    flex-direction: column;
+  }
+
+  .project-card-right {
+    flex-direction: column-reverse;
+  }
+
+  .project-image-content {
+    width: 80vw;
+    height: 40vw;
+  }
+
+  .project-image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .project-image-overlay:hover {
+    opacity: 0.8;
+  }
+
+  .project-text {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-text-left {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .project-text-right {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .project-title-left {
+    top: -35vw;
+    right: 5vw;
+    z-index: 3;
+  }
+
+  .project-title-right {
+    top: -35vw;
+    left: 5vw;
+    z-index: 3;
+  }
+
+  .project-skills-left {
+    position: initial;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .project-skills-right {
+    position: initial;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .project-links {
+    flex-direction: row;
+  }
+
+  .investify-image-overlay {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .investify-image-overlay h2 {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .nba-image-overlay {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .nba-image-overlay h2 {
+    margin-right: 10px;
+    font-size: 20px;
+  }
 }
-
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  width: 65vw;
-}
-
-.project-section {
-  text-align: center;
-}
-
-#projects-title {
-  margin-bottom: 40px;
-  font-size: 60px;
-  color: white;
-}*/
-
-
-
-
-
-
 
 
 
@@ -521,11 +609,3 @@
   font-size: 20px;
   text-align: center;
 }
-
-
-
-
-
-
-
-
