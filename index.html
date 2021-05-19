@@ -238,7 +238,6 @@
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     const navbar = document.getElementById("navbar");
-    console.log(currentScrollPos);
     if (prevScrollpos > currentScrollPos || currentScrollPos < 30) {
       navbar.style.top = "0";
     } else {

@@ -140,18 +140,18 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
   .welcome-first {
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 10px;
     color: #eb5e34;
   }
 
   .welcome-name {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 100;
   }
 
   .welcome-quote {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 100;
     margin-top: 10px;
   }
@@ -159,7 +159,7 @@
   .welcome-intro {
     width: 80%;
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
@@ -233,18 +233,18 @@
 }
 
 .about-text-form-section {
-  width: 40%;
+  width: 35%;
 }
 
 .about-text-form {
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 3vh;
+  margin-left: 7%;
 }
 
 .text-size-options {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 5vh;
@@ -284,8 +284,12 @@
   }
 
   .about-text-form-section {
-    width: 70%;
+    width: 80%;
     margin-left: 8vw;
+  }
+
+  .about-text-form-section h5 {
+    margin-left: -10px;
   }
 }
 
@@ -306,7 +310,7 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
   .about-image-content {
-    height: 25vh;
+    height: 30vh;
   }
 }
 
@@ -601,7 +605,7 @@
 
 
 .contact-page {
-  height: 90vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -614,6 +618,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10vh;
 }
 
 .contact-text {
