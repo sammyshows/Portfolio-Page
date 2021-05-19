@@ -98,7 +98,7 @@
               <span class="text-length text-length-2" style="display: none;"> a tech enthusiast, the absolute <span style="color: #eb5e34;"><strong>grooviest</strong></span>, and</span>
               <span class="text-length text-length-3 text-length-4 text-length-5 text-length-6" style="display: inline;">specialised in building <span class="text-length text-length-4 text-length-6" style="display: none; color: #eb5e34;"><strong>exceptional</strong></span><span class="text-length text-length-3 text-length-5" style="display: inline;">exceptional</span> digital experiences. </span>
               <span class="text-length text-length-4 text-length-5 text-length-6" style="display: none;">What drives Sam is a passion for tech, excitement for growth and the <span class="text-length text-length-5 text-length-6" style="display: none; color: #eb5e34;"><strong>motivation</strong></span><span class="text-length text-length-4" style="display: inline;">motivation</span> to excel.</span>
-              <span class="text-length text-length-3 text-length-4 text-length-5 text-length-6" style="display: inline;">He loves to spend all of his time coding and <span class="text-length text-length-3 text-length-6" style="display: inline; color: #eb5e34;"><strong>collaborating</strong></span><span class="text-length text-length-4 text-length-5" style="display: none;">collaborating</span> with great people<span>, but </span></span>
+              <span class="text-length text-length-3 text-length-4 text-length-5 text-length-6" style="display: inline;">He loves to spend his time coding and <span class="text-length text-length-3 text-length-6" style="display: inline; color: #eb5e34;"><strong>collaborating</strong></span><span class="text-length text-length-4 text-length-5" style="display: none;">collaborating</span> with great people<span>, but </span></span>
               <span class="text-length text-length-2 text-length-3 text-length-5" style="display: inline">ultimately <span class="text-length text-length-3 text-length-4 text-length-5 text-length-6" style="display: inline;">Sam</span> <span class="text-length text-length-3 text-length-4 text-length-5 text-length-6" style="display: inline;">is</span> </span>
               <span class="text-length text-length-4 text-length-6" style="display: none;"> at the end of the day Sam is</span>
             </span>
@@ -247,7 +247,11 @@
     if (currentScrollPos < 30) {
       navbar.style.boxShadow = "none";
       navbar.style.background = "none";
-      navbar.style.height = "14vh";
+      if (window.screen.width < 1000) {
+        navbar.style.height = "8vh";
+      } else {
+        navbar.style.height = "14vh";
+      }
     } else {
       navbar.style.boxShadow = "0 0 15px rgba(0,0,0,0.35)";
       navbar.style.background = "rgba(12, 26, 45, 0.7)";
