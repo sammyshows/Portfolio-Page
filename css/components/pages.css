@@ -71,8 +71,7 @@
   content: "";
   display: block;
   position: relative;
-  bottom: -105%;
-  right: -3.8vw;
+  right: -4.25vw;
   height: 15vh;
   width: 1px;
   background-color: #eb5e34;
@@ -93,8 +92,8 @@
   content: "";
   display: block;
   position: relative;
-  bottom: -115%;
-  right: 1.9vh;
+  bottom: -235px;
+  right: 0.9vw;
   height: 15vh;
   width: 1px;
   background-color: #eb5e34;
