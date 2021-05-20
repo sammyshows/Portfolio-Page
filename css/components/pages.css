@@ -71,7 +71,7 @@
   content: "";
   display: block;
   position: relative;
-  right: -4.25vw;
+  right: -4.1vw;
   height: 15vh;
   width: 1px;
   background-color: #eb5e34;
@@ -99,19 +99,7 @@
   background-color: #eb5e34;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
-  .icon-links-fixed {
-    visibility: hidden;
-  }
 
-  .email-fixed {
-    visibility: hidden;
-  }
-
-  .page-title {
-    width: 130%;
-  }
-}
 
 
 
@@ -137,58 +125,29 @@
   align-items: flex-start;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
-  .welcome-page {
-    height: 95vh;
-  }
-
-  .welcome-first {
-    font-size: 17px;
-    margin-bottom: 10px;
-    color: #eb5e34;
-  }
-
-  .welcome-name {
-    font-size: 33px;
-    font-weight: 100;
-  }
-
-  .welcome-quote {
-    font-size: 27px;
-    font-weight: 100;
-    margin-top: 10px;
-  }
-
-  .welcome-intro {
-    width: 80%;
-    margin-top: 10px;
-    font-size: 15px;
-  }
+.welcome-first {
+  font-size: 2.5vh;
+  margin-bottom: 10px;
+  color: #eb5e34;
 }
 
-@media only screen and (min-device-width : 1000px) and (max-device-width : 2240px) {
-  .welcome-first {
-    font-size: 2.5vh;
-    margin-bottom: 10px;
-    color: #eb5e34;
-  }
-
-  .welcome-name {
-    font-size: 10vh;
-    font-weight: 100;
-  }
-
-  .welcome-quote {
-    font-size: 8vh;
-    font-weight: 100;
-    margin-top: 10px;
-  }
-
-  .welcome-intro {
-    width: 50%;
-    margin-top: 20px;
-  }
+.welcome-name {
+  font-size: 10vh;
+  font-weight: 100;
 }
+
+.welcome-quote {
+  font-size: 8vh;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+.welcome-intro {
+  width: 50%;
+  margin-top: 20px;
+}
+
+
 
 
 
@@ -218,12 +177,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
-  .about-content {
-    flex-direction: column-reverse;
-  }
 }
 
 .about-text-content {
@@ -270,33 +223,6 @@
   width: 70%;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
-  .about-text-content {
-    margin-left: 0;
-    margin-top: 10vh;
-  }
-
-  .about-text {
-    font-size: 12px;
-    width: 70vw;
-    height: 30vh
-  }
-
-  .skills-text {
-    width: 70vw;
-    margin-top: 20px;
-  }
-
-  .about-text-form-section {
-    width: 80%;
-    margin-left: 8vw;
-  }
-
-  .about-text-form-section h5 {
-    margin-left: -10px;
-  }
-}
-
 .skills-text p {
   text-align: justify;
 }
@@ -312,11 +238,6 @@
   z-index: 1;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
-  .about-image-content {
-    height: 30vh;
-  }
-}
 
 .about-image-overlay {
   position: absolute;
@@ -493,7 +414,109 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
+
+
+
+
+.contact-page {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a192f;
+}
+
+.contact-container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.contact-text {
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+  .icon-links-fixed {
+    visibility: hidden;
+  }
+
+  .email-fixed {
+    visibility: hidden;
+  }
+
+  .page-title {
+    width: 130%;
+  }
+
+  .welcome-page {
+    height: 95vh;
+  }
+
+  .welcome-first {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #eb5e34;
+  }
+
+  .welcome-name {
+    font-size: 33px;
+    font-weight: 100;
+  }
+
+  .welcome-quote {
+    font-size: 27px;
+    font-weight: 100;
+    margin-top: 10px;
+  }
+
+  .welcome-intro {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+  }
+
+  .about-text-content {
+    margin-left: 0;
+    margin-top: 10vh;
+  }
+
+  .about-text {
+    font-size: 12px;
+    width: 70vw;
+    height: 30vh
+  }
+
+  .skills-text {
+    width: 70vw;
+    margin-top: 20px;
+  }
+
+  .about-text-form-section {
+    width: 80%;
+    margin-left: 8vw;
+  }
+
+  .about-text-form-section h5 {
+    margin-left: -10px;
+  }
+
+  .about-image-content {
+    height: 30vh;
+  }
+
   .project-container {
     display: flex;
     flex-direction: column;
@@ -601,35 +624,7 @@
     margin-right: 10px;
     font-size: 20px;
   }
-}
 
-
-
-
-.contact-page {
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #0a192f;
-}
-
-.contact-container {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10vh;
-}
-
-.contact-text {
-  width: 50%;
-  font-size: 20px;
-  text-align: center;
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
   .contact-text {
     width: 80vw;
     font-size: 18px;
