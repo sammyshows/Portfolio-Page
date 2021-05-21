@@ -86,6 +86,11 @@
   writing-mode: vertical-lr;
   text-orientation: left;
   z-index: 10;
+  transition: 0.3s;
+}
+
+.email-fixed p:hover {
+  text-shadow: 0.5px 0.5px white;
 }
 
 .email-fixed p::after {
@@ -380,6 +385,12 @@
 .iconify {
   height: 5vh;
   width: 5vh;
+  color: #eb5e35;
+  transition: 0.3s;
+}
+
+.iconify:hover {
+  color: #ff906e;
 }
 
 .project-skills-left {
