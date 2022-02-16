@@ -6,7 +6,7 @@
       </div>
       <div class="navbar-nav">
         <a v-for="navLink in navLinks" @click="scrollTo(navLink.element)" class="nav-item nav-link r-link animated-underline animated-underline_type4" style="cursor: pointer; font-weight: 300; color:#eb5e34;">{{ navLink.name }}</a>
-        <a class="nav-item nav-link" id="navbar-resume-link" style="font-weight: 300; color: white; border: 1px #eb5e34 solid; padding-left: 20px; padding-right: 20px; transition: 0.3s; border-radius: 4px;" href="./assets/sam-mccarthy-software-engineer.pdf" target="_blank" download>Resume</a>
+        <a class="nav-item nav-link" id="navbar-resume-link" style="font-weight: 300; color: white; border: 1px #eb5e34 solid; padding-left: 20px; padding-right: 20px; transition: 0.3s; border-radius: 4px;" :href="`${publicPath}sam-mccarthy-software-engineer.pdf`" target="_blank" download>Resume</a>
       </div>
     </nav>
 
@@ -272,6 +272,7 @@ export default defineComponent({
 
   data() {
     return {
+      publicPath: process.env.BASE_URL,
       bioLength : 3,
       navLinks: [
         { element: 'aboutPage', name: 'About' },
