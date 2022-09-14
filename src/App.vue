@@ -5,8 +5,8 @@
         <img src="./assets/images/sam_brand.png" alt="">
       </div>
       <div class="navbar-nav">
-        <a v-for="navLink in navLinks" @click="scrollTo(navLink.element)" class="nav-item nav-link r-link animated-underline animated-underline_type4" style="cursor: pointer; font-weight: 300; color:#eb5e34;">{{ navLink.name }}</a>
-        <a class="nav-item nav-link" id="navbar-resume-link" style="font-weight: 300; color: white; border: 1px #eb5e34 solid; padding-left: 20px; padding-right: 20px; transition: 0.3s; border-radius: 4px;" :href="`${publicPath}sam-mccarthy-software-engineer.pdf`" target="_blank" download>Resume</a>
+        <a v-for="navLink in navLinks" @click="scrollTo(navLink.element)" class="nav-item nav-link r-link animated-underline animated-underline_type4" style="cursor: pointer; font-weight: 300; color:#A1C8FF;">{{ navLink.name }}</a>
+        <a class="nav-item nav-link" id="navbar-resume-link" style="font-weight: 300; color: white; border: 1px #A1C8FF solid; padding-left: 20px; padding-right: 20px; transition: 0.3s; border-radius: 4px;" :href="`${publicPath}sam-mccarthy-software-engineer.pdf`" target="_blank" download>Resume</a>
       </div>
     </nav>
 
@@ -25,11 +25,11 @@
 
     <div class="welcome-page">
       <div class="welcome-container">
-        <p class="welcome-first">Hi, my name is</p>
+        <p class="welcome-first">G'day, my name is</p>
         <h2 class="r-link animated-underline animated-underline_type5 welcome-name">Sam McCarthy.</h2>
-        <h3 class="welcome-quote">I love to build things for the web.</h3>
+        <h3 class="welcome-quote">I love to build things on the web.</h3>
         <div class="welcome-intro">
-          <p class="r-link animated-underline animated-underline_type4">I'm a Melbourne based software engineer focused on building unique digital experiences. I have done work in both front-end and back-end development as well as design with a variety of languages. </p>
+          <p class="r-link animated-underline animated-underline_type4">I'm a Melbourne based software engineer focused on building modern and unique digital experiences. I work with both the front-end and back-end and have recently released Stockwise: currently available for free on the Google Play Store.</p>
         </div>
       </div>
       <section id="section07" class="demo">
@@ -48,32 +48,32 @@
         <div class="about-content">
           <div class="about-text-content">
             <div class="about-text-form-section">
-              <h5 style="color: #eb5e34; font-size: 15px;">Adjust bio length:</h5>
+              <h5 style="color: #A1C8FF; font-size: 15px;">Adjust bio length:</h5>
               <div class="about-text-form">
                 <div v-for="(index) in 6">
                   <input style="cursor: pointer;" class="form-check-input" type="radio" name="radio" @click="setBioLength(index)" :checked="bioLength === index">
                 </div>
               </div>
               <div class="text-size-options">
-                <h5 style="color: #eb5e34; font-size: 15px;">Shortest</h5>
-                <h5 style="color: #eb5e34; font-size: 15px;">Longest</h5>
+                <h5 style="color: #A1C8FF; font-size: 15px;">Shortest</h5>
+                <h5 style="color: #A1C8FF; font-size: 15px;">Longest</h5>
               </div>
             </div>
             <div class="about-text">
-              <strong style="font-weight: 700; color: #eb5e34;">Sam McCarthy</strong> is
+              <strong style="font-weight: 700; color: #A1C8FF;">Sam McCarthy</strong> is
               <span v-if="bioLength > 1"> a software engineer<span v-show="bioLength === 2">,</span>
-                <span v-show="bioLength === 2"> a tech enthusiast, the absolute <span style="color: #eb5e34;"><strong>grooviest</strong></span>, and</span>
-                <span v-show="bioLength > 2"> specialised in building <span v-show="bioLength === 4 || bioLength === 6" style="color: #eb5e34;"><strong>exceptional</strong></span><span v-show="bioLength === 3 || bioLength === 5">exceptional</span> digital experiences. </span>
-                <span v-show="bioLength > 3">What drives Sam is a passion for tech, excitement for growth and the <span v-show="bioLength > 4" style="color: #eb5e34;"><strong>motivation</strong></span><span v-show="bioLength === 4">motivation</span> to excel.</span>
-                <span v-show="bioLength > 2"> He loves to spend his time coding and <span v-show="bioLength === 3 || bioLength === 6" style="color: #eb5e34;"><strong>collaborating</strong></span><span v-show="bioLength === 4 || bioLength === 5">collaborating</span> with great people<span>, but </span></span>
-                <span v-show="bioLength > 1 && bioLength < 6"> ultimately <span v-show="bioLength > 2">Sam</span> <span v-show="bioLength > 2">is</span> </span>
+                <span v-show="bioLength === 2"> a tech enthusiast, the absolute <span style="color: #A1C8FF;"><strong>grooviest</strong></span>, and</span>
+                <span v-show="bioLength > 2"> specialised in building <span v-show="bioLength === 4 || bioLength === 6" style="color: #A1C8FF;"><strong>exceptional</strong></span><span v-show="bioLength === 3 || bioLength === 5">exceptional</span> digital experiences. </span>
+                <span v-show="bioLength > 3">What drives Sam is a passion for tech, excitement for growth and the <span v-show="bioLength > 4" style="color: #A1C8FF;"><strong>motivation</strong></span><span v-show="bioLength === 4">motivation</span> to excel.</span>
+                <span v-show="bioLength > 2"> He loves to spend his time coding and <span v-show="bioLength === 3 || bioLength === 6" style="color: #A1C8FF;"><strong>collaborating</strong></span><span v-show="bioLength === 4 || bioLength === 5">collaborating</span> with great people<span>, but </span></span>
+                <span v-show="bioLength < 4 || bioLength === 5"> ultimately <span v-show="bioLength > 2">Sam</span> <span v-show="bioLength > 2">is</span> </span>
                 <span v-show="bioLength === 4 || bioLength === 6"> at the end of the day Sam is</span>
               </span>
               a problem solver at heart.
               <span v-show="bioLength > 4"> If you ask Sam what made him into who he is today, he will tell you</span>
               <span v-show="bioLength === 5"> it all starts with good habits.</span>
               <span v-show="bioLength === 6"> it all starts with good habits,</span>
-              <span v-show="bioLength === 6"> ambition and, most importantly, a good system for being the best version of <span style="color: #eb5e34;"><strong>YOU</strong></span> everyday.</span>
+              <span v-show="bioLength === 6"> ambition and, most importantly, a good system for being the best version of <span style="color: #A1C8FF;"><strong>YOU</strong></span> everyday.</span>
             </div>
             <div class="skills-text">
               <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">
@@ -96,28 +96,57 @@
         <h1 @click="scrollTo('experiencePage')" style="font-weight: 100;">Experience</h1>
       </div>
 
-      <div class="project-card experience-card-left">
+      <div class="project-card experience-card experience-card-left">
         <div>
-          <a href="https://spotpass.com/">
-            <img class="experience-logo" src="./assets/images/spotpass.svg" alt="Spotpass button">
+          <a href="https://stockwise.app/portfolios" target="_blank">
+            <img class="experience-logo" src="./assets/images/stockwise.png" alt="Stockwise logo">
           </a>
         </div>
 
         <div class="project-text" style="z-index: 2">
           <div class="experience-text-left">
-            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="https://spotpass.com/" style="color: #eb5e34;" target="_blank">Spotpass</a>
-              is a micropayment system designed to allow everyone to get instant access to their favourite content for 99c or less.<br><br>
-              Being the sole Front End Developer at Spotpass, I was required to build applications from the ground up including our internal admin portal and producer portal. I would also add new features to and maintain our consumer flow.</p>
+            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Following a surge in new stock market investors in 2020, I identified a need for greater education surrounding investing in companies.
+              <br><br>This led to the creation of <a href="https://stockwise.app/portfolios" style="color: #A1C8FF;" target="_blank">Stockwise</a>: a mobile-first application enabling users to study companies, track their stock, currency and cash investments, and see deep insights into companies.</p>
           </div>
-          <div class="experience-skills-left">
-            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Vue3</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TypeScript</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Single-spa</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">GraphQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TailwindCSS</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Scrum</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Netlify</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Browserstack</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
+          <div class="experience-skills-left" style="margin-bottom: 20px;">
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'SSR', 'PWA', 'TypeScript', 'TailwindCSS', 'PostgreSQL', 'Heroku CRON', 'Netlify Hosting', 'AWS Lambda Functions']"><span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;</p><p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link"><span class="animated-underline animated-underline_type4">Figma</span></p>
           </div>
-          <p class="experience-period" style="font-size: 12px; font-weight: 100;">Jun 2021 - Present</p>
-          <h2 class="experience-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #eb5e34 solid;"><a href="https://spotpass.com/" style="color: white; text-decoration: none;" target="_blank">Spotpass</a></h2>
+          <p class="experience-period-left" style="font-size: 12px; font-weight: 100;">Mar 2022 - Present</p>
+          <h2 class="experience-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://stockwise.app/portfolios" style="color: white; text-decoration: none;" target="_blank">Stockwise</a></h2>
         </div>
+        <div class="experience-links">
+          <a href="https://github.com/sammyshows/stockwise" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
+          <a href="https://stockwise.app/portfolios" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
+        </div>
+      </div>
+
+      <div style="width: 100%; display: flex; justify-content: center; margin-top: 30px;">
+        <img class="stockwise-image" src="./assets/images/stockwise-feature.png" alt="Stockwise logo">
+      </div>
+
+      <div class="project-card experience-card experience-card-right" style="margin-top: 50px;">
         <div class="experience-links">
           <a href="https://github.com/spotpass" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
           <a href="https://spotpass.com/" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
+        </div>
+
+        <div class="project-text" style="z-index: 2">
+          <div class="experience-text-right">
+            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="https://spotpass.com/" style="color: #A1C8FF;" target="_blank">Spotpass</a>
+              is a micropayment system designed to allow everyone to get instant access to their favourite content for 99c or less.<br><br>
+              Being the sole Front End Developer at Spotpass, I was required to build applications from the ground up including our internal admin portal and producer portal. I would also add new features to and maintain our consumer flow.</p>
+          </div>
+          <div class="experience-skills-right">
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Vue3</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TypeScript</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Single-spa</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">GraphQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TailwindCSS</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Scrum</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Netlify</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Browserstack</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
+          </div>
+          <p class="experience-period-right" style="font-size: 12px; font-weight: 100;">Jun 2021 - Mar 2022</p>
+          <h2 class="experience-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://spotpass.com/" style="color: white; text-decoration: none;" target="_blank">Spotpass</a></h2>
+        </div>
+
+        <div>
+          <a href="https://spotpass.com/" target="_blank">
+            <img class="experience-logo" src="./assets/images/spotpass.svg" alt="Spotpass button">
+          </a>
         </div>
       </div>
     </div>
@@ -131,20 +160,19 @@
           <div class="project-card project-card-left">
             <div class="project-image-content">
               <img src="./assets/images/togather-1.png" alt="">
-              <a href="http://www.wegathertogather.com/" target="_blank"><div class="project-image-overlay"></div></a>
+              <div class="project-image-overlay"></div>
             </div>
             <div class="project-text" style="z-index: 2">
               <div class="project-text-left">
-                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="http://www.wegathertogather.com/" style="color: #eb5e34;" target="_blank">ToGather</a> is a platform that allows groups and couples to easily plan activities together by consolidating activities, times and location all in one spot. </p>
+                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span style="color: #A1C8FF;">ToGather</span> is a platform that allows groups and couples to easily plan activities together by consolidating activities, times and location all in one spot. </p>
               </div>
               <div class="project-skills-left">
                 <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">JavaScript</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">DOM</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Meetup API</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">PostgreSQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
               </div>
-              <h2 class="project-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #eb5e34 solid;"><a href="http://www.wegathertogather.com/" style="color: white; text-decoration: none;" target="_blank">ToGather</a></h2>
+              <h2 class="project-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">ToGather</h2>
             </div>
             <div class="project-links">
               <a href="https://github.com/Shivika-S/ToGather" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
-              <a href="http://www.wegathertogather.com/" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
             </div>
           </div>
 
@@ -155,12 +183,12 @@
             </div>
             <div class="project-text">
               <div class="project-text-right">
-                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="https://airdoor.herokuapp.com/" style="color: #eb5e34;" target="_blank">AirDoor</a> is an app that lets you book your next getaway anywhere in the world and lets you find your next visitor.</p>
+                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="https://airdoor.herokuapp.com/" style="color: #A1C8FF;" target="_blank">AirDoor</a> is an app that lets you book your next getaway anywhere in the world and lets you find your next visitor.</p>
               </div>
               <div class="project-skills-right">
                 <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Mapbox API</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Cloudinary</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">PostgreSQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
               </div>
-              <h2 class="project-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #eb5e34 solid;"><a href="https://airdoor.herokuapp.com/" style="color: white; text-decoration: none;" target="_blank">AirDoor</a></h2>
+              <h2 class="project-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://airdoor.herokuapp.com/" style="color: white; text-decoration: none;" target="_blank">AirDoor</a></h2>
             </div>
             <div class="project-image-content">
               <img src="./assets/images/airdoor-1.png" alt="">
@@ -182,7 +210,7 @@
               <div class="project-skills-left">
                 <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Yahoo Finance API</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">PostgreSQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">React</span></p>
               </div>
-              <h2 class="project-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #eb5e34 solid;">Investify</h2>
+              <h2 class="project-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">Investify</h2>
             </div>
             <div class="project-links">
               <a href="https://github.com/sammyshows/investify" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
@@ -200,7 +228,7 @@
               <div class="project-skills-right">
                 <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">NBA API</span> &nbsp;&nbsp;· &nbsp;&nbsp; <span class="r-link animated-underline animated-underline_type4">JavaScript</span>&nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">React</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
               </div>
-              <h2 class="project-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #eb5e34 solid;">All NBA</h2>
+              <h2 class="project-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">All NBA</h2>
             </div>
             <div class="project-image-content">
               <img src="https://images.unsplash.com/photo-1499754162586-08f451261482?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
@@ -280,7 +308,7 @@ export default defineComponent({
         { element: 'projectPage', name: 'Projects' },
         { element: 'contactPage', name: 'Contact' }
       ],
-      skills: [ 'Vue3', 'TypeScript', 'GraphQL', 'Single-spa', 'TailwindCSS', 'Ruby', 'Ruby on Rails', 'JavaScript', 'REST APIs', 'DOM Manipulation', 'PostgreSQL', 'Agile Methodologies', 'Wireframes', 'Netlify', 'Browserstack', 'Figma', 'HTML5', 'CSS3', 'Git', 'GitHib', 'Bootstrap' ]
+      skills: [ 'Vue3', 'TypeScript', 'GraphQL', 'Node.js', 'PWA', 'CRON', 'AWS Lambda Functions', 'Single-spa', 'TailwindCSS', 'Ruby', 'Ruby on Rails', 'JavaScript', 'REST APIs', 'DOM Manipulation', 'PostgreSQL', 'Agile Methodologies', 'Wireframes', 'Netlify', 'Browserstack', 'Figma', 'HTML5', 'CSS3', 'Git', 'GitHib', 'Bootstrap' ]
     }
   },
 
@@ -342,7 +370,7 @@ export default defineComponent({
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #eb5e34;
+    background-color: #aaaaaa;
     content: '';
     display: inline-block;
     visibility: visible;
@@ -356,7 +384,7 @@ export default defineComponent({
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: white;
+    background-color: #4448FF;
     content: '';
     display: inline-block;
     visibility: visible;
@@ -397,23 +425,23 @@ export default defineComponent({
   #section07 a span:nth-of-type(1) {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
-    border-left: 1px solid #eb5e34;
-    border-bottom: 1px solid #eb5e34;
+    border-left: 1px solid #A1C8FF;
+    border-bottom: 1px solid #A1C8FF;
   }
   #section07 a span:nth-of-type(2) {
     bottom: 64px;
     -webkit-animation-delay: .15s;
     animation-delay: .15s;
-    border-left: 1px solid #eb5e34;
-    border-bottom: 1px solid #eb5e34;
+    border-left: 1px solid #A1C8FF;
+    border-bottom: 1px solid #A1C8FF;
 
   }
   #section07 a span:nth-of-type(3) {
     bottom: 80px;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
-    border-left: 1px solid #eb5e34;
-    border-bottom: 1px solid #eb5e34;
+    border-left: 1px solid #A1C8FF;
+    border-bottom: 1px solid #A1C8FF;
   }
   @-webkit-keyframes sdb07 {
     0% {
@@ -443,7 +471,7 @@ export default defineComponent({
     border-radius: 4px;
     border: none;
     color: white;
-    border: 1px #eb5e34 solid;
+    border: 1px #A1C8FF solid;
     background: #0A192E;
     transition: 0.3s;
     cursor: pointer;
@@ -452,7 +480,7 @@ export default defineComponent({
   }
 
   .contact-button:hover {
-    background: #eb5e34;
+    background: #A1C8FF;
   }
 
   .navbar {
@@ -491,7 +519,7 @@ export default defineComponent({
   }
 
   #navbar-resume-link:hover {
-    background: #eb5e34;
+    background: #A1C8FF;
   }
 
   @media only screen and (min-device-width : 1000px) and (max-device-width : 2240px) {
@@ -511,7 +539,7 @@ export default defineComponent({
     }
 
     .nav-item {
-      font-size: 11px;
+      font-size: 8px;
     }
 
     .nav-link {
@@ -520,7 +548,7 @@ export default defineComponent({
   }
 
   .page-index h1 {
-    color: #eb5e34;
+    color: #A1C8FF;
     font-size: 40px;
   }
 
@@ -549,7 +577,7 @@ export default defineComponent({
     width: 300px;
     height: 1px;
     margin-right: 20px;
-    background-color: #eb5e34;
+    background-color: #A1C8FF;
   }
 
   .page-title::after {
@@ -560,7 +588,7 @@ export default defineComponent({
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: #eb5e34;
+    background-color: #A1C8FF;
   }
 
   .icon-links-fixed {
@@ -585,7 +613,7 @@ export default defineComponent({
     right: -4.1vw;
     height: 15vh;
     width: 1px;
-    background-color: #eb5e34;
+    background-color: #A1C8FF;
   }
 
   .email-fixed p {
@@ -609,7 +637,7 @@ export default defineComponent({
     right: 0.9vw;
     height: 15vh;
     width: 1px;
-    background-color: #eb5e34;
+    background-color: #A1C8FF;
   }
 
   .welcome-page {
@@ -633,7 +661,7 @@ export default defineComponent({
   .welcome-first {
     font-size: 2.5vh;
     margin-bottom: 10px;
-    color: #eb5e34;
+    color: #A1C8FF;
   }
 
   .welcome-name {
@@ -745,7 +773,7 @@ export default defineComponent({
     bottom: 0;
     left: 0;
     right: 0;
-    background: #ff3c00;
+    background: #A1C8FF;
     opacity: 0.3;
     transition: all 0.9s ease;
     z-index: 2;
@@ -758,13 +786,18 @@ export default defineComponent({
     height: 100%;
     width: 100%;
     border-radius: 6px;
-    border: 3px #eb5e34 solid;
+    border: 3px #A1C8FF solid;
   }
 
   .experience-page {
     width: 65%;
     margin: 0 auto;
     padding-top: 5vh;
+  }
+
+  .stockwise-image {
+    width: 60%;
+    border-radius: 4%;
   }
 
   .project-page {
@@ -813,8 +846,8 @@ export default defineComponent({
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #eb5e34;
-    opacity: 0.8;
+    background: #A1C8FF;
+    opacity: 0.5;
     transition: all 0.9s ease;
   }
 
@@ -827,7 +860,7 @@ export default defineComponent({
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
 
-  .experience-card-left {
+  .experience-card {
     height: 40vh;
     width: 100%;
     margin-bottom: 0px;
@@ -858,7 +891,7 @@ export default defineComponent({
 
   .experience-text-left {
     margin-left: 30px;
-    background-color: #18355e;
+    background-color: #0b0c5d;
     width: 35vw;
     height: auto;
     padding: 20px 30px 20px 50px;
@@ -868,9 +901,21 @@ export default defineComponent({
     box-shadow: 0 0 15px rgba(0,0,0,0.35);
   }
 
+  .experience-text-right {
+    margin-right: 30px;
+    background-color: #0b0c5d;
+    width: 35vw;
+    height: auto;
+    padding: 20px 50px 20px 30px;
+    border-radius: 4px;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.35);
+  }
+
   .project-text-left {
     margin-left: -9vw;
-    background-color: #18355e;
+    background-color: #0b0c5d;
     width: 28vw;
     height: auto;
     max-height: 16vh;
@@ -883,7 +928,7 @@ export default defineComponent({
 
   .project-text-right {
     margin-right: -9vw;
-    background-color: #18355e;
+    background-color: #0b0c5d;
     width: 28vw;
     height: auto;
     max-height: 16vh;
@@ -913,12 +958,12 @@ export default defineComponent({
   .iconify {
     height: 5vh;
     width: 5vh;
-    color: #eb5e35;
+    color: #A1C8FF;
     transition: 0.3s;
   }
 
   .iconify:hover {
-    color: #ff906e;
+    color: #4448FF;
   }
 
   .experience-skills-left {
@@ -927,6 +972,15 @@ export default defineComponent({
     min-width: 100%;
     bottom: -20px;
     right: -4vh;
+    text-align: end;
+  }
+
+  .experience-skills-right {
+    position: absolute;
+    width: 100%;
+    min-width: 100%;
+    bottom: -20px;
+    left: -4vh;
     text-align: end;
   }
 
@@ -959,10 +1013,32 @@ export default defineComponent({
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
 
-  .experience-period {
+  .experience-title-right {
+    position: absolute;
+    top: -25px;
+    left: -4vh;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .experience-card {
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .experience-period-left {
     position: absolute;
     top: 17px;
-    right: 28vh;
+    right: 31vh;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .experience-period-right {
+    position: absolute;
+    top: 17px;
+    left: 28vh;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
 
@@ -1027,7 +1103,7 @@ export default defineComponent({
     .welcome-first {
       font-size: 17px;
       margin-bottom: 10px;
-      color: #eb5e34;
+      color: #A1C8FF;
     }
 
     .welcome-name {
@@ -1086,6 +1162,10 @@ export default defineComponent({
       align-items: center;
     }
 
+    .project-text {
+      height: auto;
+    }
+
     .project-card {
       margin: 2vh 0 6vh 0;
     }
@@ -1106,11 +1186,30 @@ export default defineComponent({
       width: 30vw;
     }
 
+    .experience-links {
+      flex-direction: row;
+    }
+
+    .experience-card {
+      margin-top: 60px;
+      margin-bottom: 90px;
+    }
+
     .experience-card-left {
       flex-direction: column;
     }
 
+    .experience-card-right {
+      flex-direction: column-reverse;
+    }
+
     .experience-text-left {
+      width: 100%;
+      margin: 20px 0;
+      padding: 10px;
+    }
+
+    .experience-text-right {
       width: 100%;
       margin: 20px 0;
       padding: 10px;
@@ -1121,12 +1220,22 @@ export default defineComponent({
       text-align: center;
     }
 
-    .experience-links {
-      flex-direction: row;
+    .experience-skills-right {
+      position: unset;
+      text-align: center;
     }
 
     .experience-title-left {
       display: none;
+    }
+
+    .experience-title-right {
+      display: none;
+    }
+
+    .stockwise-image {
+      width: 100%;
+      margin-bottom: 80px;
     }
 
     .project-card-left {
@@ -1229,13 +1338,14 @@ export default defineComponent({
     }
   }
 
-  .r-link{
+  .r-link {
     --uirLinkDisplay: var(--rLinkDisplay, inline-block);
     --uirLinkTextColor: var(--rLinkTextColor);
     --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
 
     display: var(--uirLinkDisplay) !important;
     text-decoration: var(--uirLinkTextDecoration) !important;
+    margin: 0;
   }
 
   .animated-underline{
@@ -1261,7 +1371,7 @@ export default defineComponent({
 
   :root{
     --animatedUnderlineHeight: 1rem;
-    --animatedUnderlineBgColor: #eb5e34;
+    --animatedUnderlineBgColor: #A1C8FF;
   }
 
   .animated-underline_type5{
