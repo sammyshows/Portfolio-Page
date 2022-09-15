@@ -195,48 +195,6 @@
               <a href="https://airdoor.herokuapp.com/" target="_blank"><div class="project-image-overlay"></div></a>
             </div>
           </div>
-
-          <div class="project-card project-card-left">
-            <div class="project-image-content">
-              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
-              <div class="project-image-overlay investify-image-overlay">
-                <h2>Coming soon...</h2>
-              </div>
-            </div>
-            <div class="project-text">
-              <div class="project-text-left">
-                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Investify provides analytics, research and reports on stocks for individuals, making it simple to track your investments.</p>
-              </div>
-              <div class="project-skills-left">
-                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Yahoo Finance API</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">PostgreSQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">React</span></p>
-              </div>
-              <h2 class="project-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">Investify</h2>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sammyshows/investify" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
-            </div>
-          </div>
-
-          <div class="project-card project-card-right nba-project-card">
-            <div class="project-links">
-              <a href="https://github.com/sammyshows/all-nba" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
-            </div>
-            <div class="project-text">
-              <div class="project-text-right">
-                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">All NBA is the place to stay updated with the latest news around the league and see live updates of games.</p>
-              </div>
-              <div class="project-skills-right">
-                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">NBA API</span> &nbsp;&nbsp;· &nbsp;&nbsp; <span class="r-link animated-underline animated-underline_type4">JavaScript</span>&nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">React</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
-              </div>
-              <h2 class="project-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">All NBA</h2>
-            </div>
-            <div class="project-image-content">
-              <img src="https://images.unsplash.com/photo-1499754162586-08f451261482?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
-              <div class="project-image-overlay nba-image-overlay">
-                <h2>Coming soon...</h2>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
