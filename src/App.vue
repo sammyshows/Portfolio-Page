@@ -105,11 +105,11 @@
 
         <div class="project-text" style="z-index: 2">
           <div class="experience-text-left">
-            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Following a surge in new stock market investors in 2020, I identified a need for greater education surrounding investing in companies.
-              <br><br>This led to the creation of <a href="https://stockwise.app/portfolios" style="color: #A1C8FF;" target="_blank">Stockwise</a>: a mobile-first application enabling users to study companies, track their stock, currency and cash investments, and see deep insights into companies.</p>
+            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Following a surge in new stock market investors in 2020, I identified a need for greater education and tools for studying businesses.
+              <br><br>This led to the birth of <a href="https://stockwise.app/portfolios" style="color: #A1C8FF;" target="_blank">Stockwise</a>: a mobile-first application enabling users to study companies, track their stock, currency and cash investments, and see deep insights into companies.</p>
           </div>
           <div class="experience-skills-left" style="margin-bottom: 20px;">
-            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'SSR', 'PWA', 'TypeScript', 'TailwindCSS', 'PostgreSQL', 'Heroku CRON', 'Netlify Hosting', 'AWS Lambda Functions']"><span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;</p><p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link"><span class="animated-underline animated-underline_type4">Figma</span></p>
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'PostgreSQL', 'TailwindCSS', 'SSR', 'PWA', 'Heroku CRON', 'Netlify Hosting', 'AWS Lambda Functions']"><span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;</p><p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link"><span class="animated-underline animated-underline_type4">Figma</span></p>
           </div>
           <p class="experience-period-left" style="font-size: 12px; font-weight: 100;">Mar 2022 - Present</p>
           <h2 class="experience-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://stockwise.app/portfolios" style="color: white; text-decoration: none;" target="_blank">Stockwise</a></h2>
@@ -137,7 +137,7 @@
               Being the sole Front End Developer at Spotpass, I was required to build applications from the ground up including our internal admin portal and producer portal. I would also add new features to and maintain our consumer flow.</p>
           </div>
           <div class="experience-skills-right">
-            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Vue3</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TypeScript</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Single-spa</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">GraphQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TailwindCSS</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Scrum</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Netlify</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Browserstack</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Vue3</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TypeScript</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">GraphQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TailwindCSS</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Single-spa</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Scrum</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Netlify</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Browserstack</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
           </div>
           <p class="experience-period-right" style="font-size: 12px; font-weight: 100;">Jun 2021 - Mar 2022</p>
           <h2 class="experience-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://spotpass.com/" style="color: white; text-decoration: none;" target="_blank">Spotpass</a></h2>
@@ -266,7 +266,7 @@ export default defineComponent({
         { element: 'projectPage', name: 'Projects' },
         { element: 'contactPage', name: 'Contact' }
       ],
-      skills: [ 'Vue3', 'TypeScript', 'GraphQL', 'Node.js', 'PWA', 'CRON', 'AWS Lambda Functions', 'Single-spa', 'TailwindCSS', 'Ruby', 'Ruby on Rails', 'JavaScript', 'REST APIs', 'DOM Manipulation', 'PostgreSQL', 'Agile Methodologies', 'Wireframes', 'Netlify', 'Browserstack', 'Figma', 'HTML5', 'CSS3', 'Git', 'GitHib', 'Bootstrap' ]
+      skills: [ 'Vue3', 'Node.js', 'JavaScript', 'TypeScript', 'PostgreSQL', 'GraphQL', 'REST APIs', 'Ruby', 'Ruby on Rails', 'TailwindCSS', 'PWA', 'CRON', 'AWS Lambda Functions', 'Single-spa', 'DOM Manipulation', 'Agile Methodologies', 'Wireframes', 'Netlify', 'Browserstack', 'Figma', 'HTML5', 'CSS3', 'Git', 'GitHib', 'Bootstrap' ]
     }
   },
 
