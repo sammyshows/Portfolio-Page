@@ -5,7 +5,7 @@
         <img src="./assets/images/sam_brand.png" alt="">
       </div>
       <div class="navbar-nav">
-        <a v-for="navLink in navLinks" @click="scrollTo(navLink.element)" class="nav-item nav-link r-link animated-underline animated-underline_type4" style="cursor: pointer; font-weight: 300; color:#A1C8FF;">{{ navLink.name }}</a>
+        <a v-for="navLink in navLinks" @click="scrollTo(navLink.element)" class="nav-item nav-link r-link animated-underline animated-underline_type4 hidden sm:flex" style="cursor: pointer; font-weight: 300; color:#A1C8FF;">{{ navLink.name }}</a>
         <a class="nav-item nav-link" id="navbar-resume-link" style="font-weight: 300; color: white; border: 1px #A1C8FF solid; padding-left: 20px; padding-right: 20px; transition: 0.3s; border-radius: 4px;" :href="`${publicPath}sam-mccarthy-software-engineer.pdf`" target="_blank" download>Resume</a>
       </div>
     </nav>
@@ -22,14 +22,13 @@
       <a href="mailto: samrmccarthy6@gmail.com"><p>samrmccarthy6@gmail.com</p></a>
     </div>
 
-
     <div class="welcome-page">
       <div class="welcome-container">
         <p class="welcome-first">G'day, my name is</p>
         <h2 class="r-link animated-underline animated-underline_type5 welcome-name">Sam McCarthy.</h2>
-        <h3 class="welcome-quote">I love to build things on the web.</h3>
+        <h3 class="welcome-quote">I love to build things.</h3>
         <div class="welcome-intro">
-          <p class="r-link animated-underline animated-underline_type4">I'm a Melbourne based software engineer focused on building modern and unique digital experiences. I work with both the front-end and back-end and have recently released Stockwise: currently available for free on the Google Play Store.</p>
+          <p class="r-link animated-underline animated-underline_type4">I'm a passionate software engineer focused on building high-quality, modern digital experiences.</p>
         </div>
       </div>
       <section id="section07" class="demo">
@@ -37,8 +36,6 @@
       </section>
       <div @click="scrollTo('aboutPage')" class="arrow-button"></div>
     </div>
-
-
 
     <div ref="aboutPage" class="about-page">
       <div class="about-container">
@@ -48,10 +45,10 @@
         <div class="about-content">
           <div class="about-text-content">
             <div class="about-text-form-section">
-              <h5 style="color: #A1C8FF; font-size: 15px;">Adjust bio length:</h5>
+              <h5 style="color: #A1C8FF; font-size: 15px;" class="mb-2 sm:mb-0">Adjust bio length:</h5>
               <div class="about-text-form">
                 <div v-for="(index) in 6">
-                  <input style="cursor: pointer;" class="form-check-input" type="radio" name="radio" @click="setBioLength(index)" :checked="bioLength === index">
+                  <input style="cursor: pointer;" type="radio" name="radio" @click="setBioLength(index)" :checked="bioLength === index">
                 </div>
               </div>
               <div class="text-size-options">
@@ -75,12 +72,12 @@
               <span v-show="bioLength === 6"> it all starts with good habits,</span>
               <span v-show="bioLength === 6"> ambition and, most importantly, a good system for being the best version of <span style="color: #A1C8FF;"><strong>YOU</strong></span> everyday.</span>
             </div>
-            <div class="skills-text">
+            <!-- <div class="skills-text">
               <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">
                 <span v-for="skill in skills"><span class="r-link animated-underline animated-underline_type4">{{ skill }}</span>&nbsp;&nbsp;· &nbsp;&nbsp;</span>
                 <span class="r-link animated-underline animated-underline_type4">SQLite</span>
               </p>
-            </div>
+            </div> -->
           </div>
           <div class="about-image-content">
             <img class="about-image-content" src="./assets/images/sam_close_up.jpg" alt="sam mccarthy close up">
@@ -96,38 +93,111 @@
         <h1 @click="scrollTo('experiencePage')" style="font-weight: 100;">Experience</h1>
       </div>
 
-      <div class="project-card experience-card experience-card-left">
-        <div>
-          <a href="https://stockwise.app/portfolios" target="_blank">
+      <!-- ----------------------------- Zwift International ----------------------------- -->
+
+      <div class="project-card experience-card experience-card-left mt-0 sm:mt-20">
+        <div class="w-full flex justify-center items-center gap-x-4">
+          <a href="https://zwift.com.au/" target="_blank">
+            <img class="experience-logo" src="./assets/images/icn_zwift_Icon.svg" alt="Zwift logo">
+          </a>
+
+          <h2 class="text-3xl sm:hidden" style="font-weight: 100;">Zwift International</h2>
+        </div>
+
+        <div class="project-text" style="z-index: 2">
+          <div class="experience-text-left">
+            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Zwift International provides a comprehensive online ordering platform for the hospitality industry.<br><br>
+              As the lead developer of the product team, I've had the pleasure of spearheading projects such as building internal AI tools, business facing application on Windows, Mac and Android, POS & KDS systems, staff intranet, online ordering website and much more.</p>
+          </div>
+          <div class="experience-skills-left hidden sm:block" style="margin-bottom: 20px;">
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'Linux', 'Electron', 'Capacitor', 'SQL Server', 'CouchDB', '.NET', 'AWS', 'CRON', 'PM2', 'WebSocket', 'TailwindCSS']"><span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;</p><p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link"><span class="animated-underline animated-underline_type4">Figma</span></p>
+          </div>
+          <div class="experience-title-left">
+            <p style="font-size: 12px; font-weight: 100;">Oct 2022 - Present</p>
+            <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://zwift.com.au/" style="color: white; text-decoration: none;" target="_blank">Zwift International</a></h2>
+          </div>
+        </div>
+        <div class="experience-links hidden sm:flex">
+          <a href="https://zwift.com.au/" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
+        </div>
+      </div>
+
+      <!-- ----------------------------- LetterLock ----------------------------- -->
+
+      <div class="project-card experience-card experience-card-right mt-16 sm:mt-32">
+        <div class="experience-links hidden sm:flex">
+          <a href="https://github.com/sammyshows/" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
+          <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
+        </div>
+
+        <div class="project-text" style="z-index: 2">
+          <div class="experience-text-right">
+            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" style="color: #A1C8FF;" target="_blank">LetterLock</a>
+              is a mobile puzzle game available on iOS and Android.<br><br>
+              It's a very fun and challenging original concept where letters must be shuffled to form the required words in limited moves.<br><br>
+              I was the sole developer on this project and was responsible for the entire front end and back end development, as well as game design and marketing.
+            </p>
+          </div>
+          <div class="experience-skills-right hidden sm:block">
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'AWS Lambda', 'Capacitor', 'PostgreSQL', 'TailwindCSS', 'App Store', 'Play Store']"><span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;</p><p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link"><span class="animated-underline animated-underline_type4">Figma</span></p>
+          </div>
+          <div class="experience-title-right">
+            <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" style="color: white; text-decoration: none;" target="_blank">LetterLock</a></h2>
+            <p style="font-size: 12px; font-weight: 100;">May 2023 - Jul 2023</p>
+          </div>
+        </div>
+
+        <div class="w-full flex justify-center items-center gap-x-4">
+          <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" target="_blank">
+            <img class="experience-logo rounded-lg sm:rounded-xl" src="./assets/images/letterlock-logo.png" alt="Letterlock logo">
+          </a>
+
+          <h2 class="text-3xl sm:hidden" style="font-weight: 100;">LetterLock</h2>
+        </div>
+      </div>
+
+      <div style="width: 100%; display: flex; justify-content: center;" class="sm:mt-12">
+        <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" target="_blank" class="feature-image"><img style="width: 100%" src="./assets/images/letterlock-feature.png" alt="LetterLock Feature"></a>
+      </div>
+
+      <!-- ----------------------------- Stockwise ----------------------------- -->
+
+      <div class="project-card experience-card experience-card-left mt-16 sm:mt-32">
+        <div class="w-full flex justify-center items-center gap-x-4">
+          <a href="https://apps.apple.com/au/app/stockwise/id6444794675" target="_blank">
             <img class="experience-logo" src="./assets/images/stockwise.png" alt="Stockwise logo">
           </a>
+
+          <h2 class="text-3xl sm:hidden" style="font-weight: 100;">Stockwise</h2>
         </div>
 
         <div class="project-text" style="z-index: 2">
           <div class="experience-text-left">
             <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Following a surge in new stock market investors in 2020, I identified a need for greater education and tools for studying businesses.
-              <br><br>This led to the birth of <a href="https://stockwise.app/portfolios" style="color: #A1C8FF;" target="_blank">Stockwise</a>: a mobile-first application enabling users to study companies, track their stock, currency and cash investments, and see deep insights into companies.</p>
+              <br><br>This led to the birth of <a href="https://apps.apple.com/au/app/stockwise/id6444794675" style="color: #A1C8FF;" target="_blank">Stockwise</a>: a mobile-first application enabling users to study companies, track their stock, currency and cash investments, and see deep insights into companies.</p>
           </div>
-          <div class="experience-skills-left" style="margin-bottom: 20px;">
+          <div class="experience-skills-left hidden sm:block" style="margin-bottom: 20px;">
             <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'PostgreSQL', 'TailwindCSS', 'SSR', 'PWA', 'Heroku CRON', 'Netlify Hosting', 'AWS Lambda Functions']"><span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;</p><p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link"><span class="animated-underline animated-underline_type4">Figma</span></p>
           </div>
-          <p class="experience-period-left" style="font-size: 12px; font-weight: 100;">Mar 2022 - Present</p>
-          <h2 class="experience-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://stockwise.app/portfolios" style="color: white; text-decoration: none;" target="_blank">Stockwise</a></h2>
+          <div class="experience-title-left">
+            <p style="font-size: 12px; font-weight: 100;">Mar 2022 - Present</p>
+            <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://apps.apple.com/au/app/stockwise/id6444794675" style="color: white; text-decoration: none;" target="_blank">Stockwise</a></h2>
+          </div>
         </div>
-        <div class="experience-links">
-          <a href="https://github.com/sammyshows/stockwise" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
-          <a href="https://stockwise.app/portfolios" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
+        <div class="experience-links hidden sm:flex">
+          <a href="https://github.com/sammyshows/" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
+          <a href="https://apps.apple.com/au/app/stockwise/id6444794675" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
         </div>
       </div>
 
-      <div style="width: 100%; display: flex; justify-content: center; margin-top: 30px;">
-        <img class="stockwise-image" src="./assets/images/stockwise-feature.png" alt="Stockwise logo">
+      <div style="width: 100%; display: flex; justify-content: center;" class="sm:mt-12">
+        <a href="https://apps.apple.com/au/app/stockwise/id6444794675" target="_blank" class="feature-image"><img style="width: 100%;" src="./assets/images/stockwise-feature.png" alt="Stockwise logo"></a>
       </div>
 
-      <div class="project-card experience-card experience-card-right" style="margin-top: 50px;">
-        <div class="experience-links">
-          <a href="https://github.com/spotpass" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
-          <a href="https://spotpass.com/" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
+      <!-- ----------------------------- Spotpass ----------------------------- -->
+
+      <div class="project-card experience-card experience-card-right mt-16 sm:mt-32">
+        <div class="experience-links hidden sm:flex">
         </div>
 
         <div class="project-text" style="z-index: 2">
@@ -136,17 +206,21 @@
               is a micropayment system designed to allow everyone to get instant access to their favourite content for 99c or less.<br><br>
               Being the sole Front End Developer at Spotpass, I was required to build applications from the ground up including our internal admin portal and producer portal. I would also add new features to and maintain our consumer flow.</p>
           </div>
-          <div class="experience-skills-right">
+          <div class="experience-skills-right hidden sm:block">
             <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Vue3</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TypeScript</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">GraphQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TailwindCSS</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Single-spa</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Scrum</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Netlify</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Browserstack</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
           </div>
-          <p class="experience-period-right" style="font-size: 12px; font-weight: 100;">Jun 2021 - Mar 2022</p>
-          <h2 class="experience-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://spotpass.com/" style="color: white; text-decoration: none;" target="_blank">Spotpass</a></h2>
+          <div class="experience-title-right">
+            <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://spotpass.com/" style="color: white; text-decoration: none;" target="_blank">Spotpass</a></h2>
+            <p style="font-size: 12px; font-weight: 100;">Jun 2021 - Mar 2022</p>
+          </div>
         </div>
 
-        <div>
+        <div class="w-full flex justify-center items-center gap-x-4">
           <a href="https://spotpass.com/" target="_blank">
             <img class="experience-logo" src="./assets/images/spotpass.svg" alt="Spotpass button">
           </a>
+
+          <h2 class="text-3xl sm:hidden" style="font-weight: 100;">Spotpass</h2>
         </div>
       </div>
     </div>
@@ -160,39 +234,38 @@
           <div class="project-card project-card-left">
             <div class="project-image-content">
               <img src="./assets/images/togather-1.png" alt="">
-              <div class="project-image-overlay"></div>
+              <div class="project-image-overlay hidden sm:block"></div>
             </div>
             <div class="project-text" style="z-index: 2">
               <div class="project-text-left">
                 <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span style="color: #A1C8FF;">ToGather</span> is a platform that allows groups and couples to easily plan activities together by consolidating activities, times and location all in one spot. </p>
               </div>
-              <div class="project-skills-left">
+              <div class="project-skills-left hidden sm:flex">
                 <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">JavaScript</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">DOM</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Meetup API</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">PostgreSQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
               </div>
               <h2 class="project-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">ToGather</h2>
             </div>
-            <div class="project-links">
+            <div class="project-links hidden sm:flex">
               <a href="https://github.com/Shivika-S/ToGather" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
             </div>
           </div>
 
           <div class="project-card project-card-right">
-            <div class="project-links">
+            <div class="project-links hidden sm:flex">
               <a href="https://github.com/sammyshows/air_door" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
-              <a href="https://airdoor.herokuapp.com/" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
             </div>
             <div class="project-text">
               <div class="project-text-right">
                 <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="https://airdoor.herokuapp.com/" style="color: #A1C8FF;" target="_blank">AirDoor</a> is an app that lets you book your next getaway anywhere in the world and lets you find your next visitor.</p>
               </div>
-              <div class="project-skills-right">
+              <div class="project-skills-right hidden sm:flex">
                 <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Mapbox API</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Cloudinary</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">PostgreSQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
               </div>
               <h2 class="project-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://airdoor.herokuapp.com/" style="color: white; text-decoration: none;" target="_blank">AirDoor</a></h2>
             </div>
             <div class="project-image-content">
               <img src="./assets/images/airdoor-1.png" alt="">
-              <a href="https://airdoor.herokuapp.com/" target="_blank"><div class="project-image-overlay"></div></a>
+              <a href="https://airdoor.herokuapp.com/" target="_blank"><div class="project-image-overlay hidden sm:block"></div></a>
             </div>
           </div>
         </div>
@@ -753,7 +826,7 @@ export default defineComponent({
     padding-top: 5vh;
   }
 
-  .stockwise-image {
+  .feature-image {
     width: 60%;
     border-radius: 4%;
   }
@@ -792,7 +865,7 @@ export default defineComponent({
 
   .experience-logo {
     object-fit: contain;
-    width: 15vw;
+    width: 12vw;
   }
 
   .project-image-overlay {
@@ -965,6 +1038,9 @@ export default defineComponent({
   }
 
   .experience-title-left {
+    display: flex;
+    align-items: end;
+    gap: 40px;
     position: absolute;
     top: -25px;
     right: -4vh;
@@ -972,18 +1048,13 @@ export default defineComponent({
   }
 
   .experience-title-right {
+    display: flex;
+    align-items: end;
+    gap: 40px;
     position: absolute;
     top: -25px;
     left: -4vh;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  }
-
-  .experience-card {
-    height: 40vh;
-    width: 100%;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: space-around;
   }
 
   .experience-period-left {
@@ -1038,6 +1109,14 @@ export default defineComponent({
   }
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+    .page-title::before {
+      top: 10px;
+    }
+
+    .page-title::after {
+      top: 10px;
+    }
+
     .icon-links-fixed {
       visibility: hidden;
     }
@@ -1047,38 +1126,46 @@ export default defineComponent({
     }
 
     .page-title {
-      width: 130%;
+      width: 100vw;
     }
 
     .experience-title {
-      width: 84.5vw;
+      width: 100vw;
     }
 
     .welcome-page {
       height: 95vh;
     }
 
+    .welcome-container {
+      width: 80%;
+    }
+
     .welcome-first {
-      font-size: 17px;
-      margin-bottom: 10px;
+      font-size: 24px;
+      margin-bottom: 15px;
       color: #A1C8FF;
     }
 
     .welcome-name {
-      font-size: 33px;
+      font-size: 42px;
       font-weight: 100;
     }
 
     .welcome-quote {
       font-size: 27px;
       font-weight: 100;
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     .welcome-intro {
-      width: 80%;
+      width: 100%;
       margin-top: 10px;
       font-size: 15px;
+    }
+
+    .about-container {
+      width: 80%;
     }
 
     .about-content {
@@ -1091,7 +1178,7 @@ export default defineComponent({
     }
 
     .about-text {
-      font-size: 12px;
+      font-size: 13px;
       width: 70vw;
       height: 30vh
     }
@@ -1101,9 +1188,14 @@ export default defineComponent({
       margin-top: 20px;
     }
 
+    .about-text-form {
+      margin-bottom: 8px;
+      margin-left: 0;
+    }
+
     .about-text-form-section {
       width: 80%;
-      margin-left: 8vw;
+      margin-left: 10px;
     }
 
     .about-text-form-section h5 {
@@ -1111,7 +1203,12 @@ export default defineComponent({
     }
 
     .about-image-content {
-      height: 30vh;
+      height: auto;
+      width: 75vw;
+    }
+
+    .text-size-options {
+      margin-top: 0;
     }
 
     .project-container {
@@ -1136,12 +1233,12 @@ export default defineComponent({
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 65%;
+      width: 80%;
       margin: 0 auto;
     }
 
     .experience-logo {
-      width: 30vw;
+      width: 40px;
     }
 
     .experience-links {
@@ -1149,8 +1246,9 @@ export default defineComponent({
     }
 
     .experience-card {
+      height: auto;
       margin-top: 60px;
-      margin-bottom: 90px;
+      margin-bottom: 0px;
     }
 
     .experience-card-left {
@@ -1165,12 +1263,16 @@ export default defineComponent({
       width: 100%;
       margin: 20px 0;
       padding: 10px;
+      background-color: transparent;
+      box-shadow: none;
     }
 
     .experience-text-right {
       width: 100%;
       margin: 20px 0;
       padding: 10px;
+      background-color: transparent;
+      box-shadow: none;
     }
 
     .experience-skills-left {
@@ -1191,9 +1293,8 @@ export default defineComponent({
       display: none;
     }
 
-    .stockwise-image {
+    .feature-image {
       width: 100%;
-      margin-bottom: 80px;
     }
 
     .project-card-left {
@@ -1204,6 +1305,7 @@ export default defineComponent({
     .project-card-right {
       flex-direction: column-reverse;
       height: auto;
+      margin-bottom: 0;
     }
 
     .project-image-content {
@@ -1329,7 +1431,7 @@ export default defineComponent({
 
   :root{
     --animatedUnderlineHeight: 1rem;
-    --animatedUnderlineBgColor: #A1C8FF;
+    --animatedUnderlineBgColor: #6daaff;
   }
 
   .animated-underline_type5{
