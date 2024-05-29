@@ -45,7 +45,7 @@
         <div class="about-content">
           <div class="about-text-content">
             <div class="about-text-form-section">
-              <h5 style="color: #A1C8FF; font-size: 15px;" class="mb-2 sm:mb-0">Adjust bio length:</h5>
+              <h5 style="color: #A1C8FF; font-size: 15px;" class="mb-2 sm:mb-4">Adjust bio length:</h5>
               <div class="about-text-form">
                 <div v-for="(index) in 6">
                   <input style="cursor: pointer;" type="radio" name="radio" @click="setBioLength(index)" :checked="bioLength === index">
@@ -80,7 +80,7 @@
             </div> -->
           </div>
           <div class="about-image-content">
-            <img class="relative w-full" src="./assets/images/sam_close_up.jpg" alt="sam mccarthy close up">
+            <img class="relative object-cover" src="./assets/images/sam_close_up.jpg" alt="sam mccarthy close up">
             <div class="about-image-overlay"></div>
             <div class="about-image-border"></div>
           </div>
@@ -594,6 +594,7 @@ export default defineComponent({
   .page-title h1 {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     white-space: nowrap;
+    font-size: 1.5rem;;
   }
 
   .page-title h1:hover {
@@ -604,7 +605,7 @@ export default defineComponent({
     content: "";
     display: block;
     position: relative;
-    top: 10px;
+    top: 14px;
     width: 300px;
     height: 1px;
     margin-right: 20px;
@@ -615,7 +616,7 @@ export default defineComponent({
     content: "";
     display: block;
     position: relative;
-    top: 10px;
+    top: 14px;
     width: 300px;
     height: 1px;
     margin-left: 20px;
@@ -755,7 +756,6 @@ export default defineComponent({
   .about-text-form {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3vh;
     margin-left: 7%;
   }
 
@@ -763,8 +763,8 @@ export default defineComponent({
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 5vh;
     margin-bottom: 3.5vh;
+    margin-top: 1rem;
   }
 
   .about-text {
