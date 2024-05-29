@@ -180,7 +180,7 @@
             <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'PostgreSQL', 'TailwindCSS', 'SSR', 'PWA', 'Heroku CRON', 'Netlify Hosting', 'AWS Lambda Functions']"><span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;</p><p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link"><span class="animated-underline animated-underline_type4">Figma</span></p>
           </div>
           <div class="experience-title-left">
-            <p style="font-size: 12px; font-weight: 100;">Mar 2022 - Present</p>
+            <p style="font-size: 12px; font-weight: 100;">Apr 2022 - Sep 2022</p>
             <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://apps.apple.com/au/app/stockwise/id6444794675" style="color: white; text-decoration: none;" target="_blank">Stockwise</a></h2>
           </div>
         </div>
