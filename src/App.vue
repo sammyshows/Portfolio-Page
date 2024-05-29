@@ -80,7 +80,7 @@
             </div> -->
           </div>
           <div class="about-image-content">
-            <img class="about-image-content" src="./assets/images/sam_close_up.jpg" alt="sam mccarthy close up">
+            <img class="relative w-full" src="./assets/images/sam_close_up.jpg" alt="sam mccarthy close up">
             <div class="about-image-overlay"></div>
             <div class="about-image-border"></div>
           </div>
@@ -225,7 +225,7 @@
       </div>
     </div>
 
-    <div ref="projectPage" class="project-page">
+    <div ref="projectPage" class="project-page pt-5">
       <div class="project-container">
         <div class="page-title" style="margin-top: 5vh;">
           <h1 @click="scrollTo('projectPage')" style="font-weight: 100;">Projects</h1>
@@ -604,7 +604,7 @@ export default defineComponent({
     content: "";
     display: block;
     position: relative;
-    top: 3vh;
+    top: 10px;
     width: 300px;
     height: 1px;
     margin-right: 20px;
@@ -615,7 +615,7 @@ export default defineComponent({
     content: "";
     display: block;
     position: relative;
-    top: 3vh;
+    top: 10px;
     width: 300px;
     height: 1px;
     margin-left: 20px;
@@ -1001,7 +1001,7 @@ export default defineComponent({
     position: absolute;
     width: 100%;
     min-width: 100%;
-    bottom: -20px;
+    bottom: -10px;
     right: -4vh;
     text-align: end;
   }
@@ -1010,7 +1010,7 @@ export default defineComponent({
     position: absolute;
     width: 100%;
     min-width: 100%;
-    bottom: -20px;
+    bottom: -10px;
     left: -4vh;
     text-align: end;
   }
