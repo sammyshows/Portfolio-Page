@@ -95,69 +95,40 @@
 
       <!-- ----------------------------- Zwift International ----------------------------- -->
 
-      <div class="project-card experience-card experience-card-left mt-0 sm:mt-20">
+      <div class="project-card experience-card experience-card-right mt-0 sm:mt-20">
+        <div class="experience-links hidden sm:flex">
+          <a href="https://zwift.com.au/" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
+        </div>
+        
+        <div class="project-text" style="z-index: 2">
+          <div class="experience-text-right">
+            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">
+              Zwift International provides a comprehensive online ordering platform for the hospitality industry.<br><br>
+              As the lead developer of the product team, I've had the pleasure of spearheading projects such as building internal AI tools, business-facing applications on Windows, Mac, and Android, POS & KDS systems, staff intranet, online ordering website, and much more.
+            </p>
+          </div>
+          <div class="experience-skills-right hidden sm:block" style="margin-bottom: 20px;">
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'Linux', 'Electron', 'Capacitor', 'SQL Server', 'CouchDB', '.NET', 'AWS', 'CRON', 'PM2', 'WebSocket', 'TailwindCSS']">
+              <span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;
+            </p>
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link">
+              <span class="animated-underline animated-underline_type4">Figma</span>
+            </p>
+          </div>
+          <div class="experience-title-right">
+            <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">
+              <a href="https://zwift.com.au/" style="color: white; text-decoration: none;" target="_blank">Zwift International</a>
+            </h2>
+            <p style="font-size: 12px; font-weight: 100;">Oct 2022 - Present</p>
+          </div>
+        </div>
+        
         <div class="w-full flex justify-center items-center gap-x-4">
           <a href="https://zwift.com.au/" target="_blank">
             <img class="experience-logo" src="./assets/images/icn_zwift_Icon.svg" alt="Zwift logo">
           </a>
-
           <h2 class="text-3xl sm:hidden" style="font-weight: 100;">Zwift International</h2>
         </div>
-
-        <div class="project-text" style="z-index: 2">
-          <div class="experience-text-left">
-            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Zwift International provides a comprehensive online ordering platform for the hospitality industry.<br><br>
-              As the lead developer of the product team, I've had the pleasure of spearheading projects such as building internal AI tools, business facing application on Windows, Mac and Android, POS & KDS systems, staff intranet, online ordering website and much more.</p>
-          </div>
-          <div class="experience-skills-left hidden sm:block" style="margin-bottom: 20px;">
-            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'Linux', 'Electron', 'Capacitor', 'SQL Server', 'CouchDB', '.NET', 'AWS', 'CRON', 'PM2', 'WebSocket', 'TailwindCSS']"><span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;</p><p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link"><span class="animated-underline animated-underline_type4">Figma</span></p>
-          </div>
-          <div class="experience-title-left">
-            <p style="font-size: 12px; font-weight: 100;">Oct 2022 - Present</p>
-            <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://zwift.com.au/" style="color: white; text-decoration: none;" target="_blank">Zwift International</a></h2>
-          </div>
-        </div>
-        <div class="experience-links hidden sm:flex">
-          <a href="https://zwift.com.au/" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
-        </div>
-      </div>
-
-      <!-- ----------------------------- LetterLock ----------------------------- -->
-
-      <div class="project-card experience-card experience-card-right mt-16 sm:mt-32">
-        <div class="experience-links hidden sm:flex">
-          <a href="https://github.com/sammyshows/" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
-          <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
-        </div>
-
-        <div class="project-text" style="z-index: 2">
-          <div class="experience-text-right">
-            <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" style="color: #A1C8FF;" target="_blank">LetterLock</a>
-              is a mobile puzzle game available on iOS and Android.<br><br>
-              It's a very fun and challenging original concept where letters must be shuffled to form the required words in limited moves.<br><br>
-              I was the sole developer on this project and was responsible for the entire front end and back end development, as well as game design and marketing.
-            </p>
-          </div>
-          <div class="experience-skills-right hidden sm:block">
-            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'AWS Lambda', 'Capacitor', 'PostgreSQL', 'TailwindCSS', 'App Store', 'Play Store']"><span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;</p><p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link"><span class="animated-underline animated-underline_type4">Figma</span></p>
-          </div>
-          <div class="experience-title-right">
-            <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" style="color: white; text-decoration: none;" target="_blank">LetterLock</a></h2>
-            <p style="font-size: 12px; font-weight: 100;">May 2023 - Jul 2023</p>
-          </div>
-        </div>
-
-        <div class="w-full flex justify-center items-center gap-x-4">
-          <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" target="_blank">
-            <img class="experience-logo rounded-lg sm:rounded-xl" src="./assets/images/letterlock-logo.png" alt="Letterlock logo">
-          </a>
-
-          <h2 class="text-3xl sm:hidden" style="font-weight: 100;">LetterLock</h2>
-        </div>
-      </div>
-
-      <div style="width: 100%; display: flex; justify-content: center;" class="sm:mt-12">
-        <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" target="_blank" class="feature-image"><img style="width: 100%" src="./assets/images/letterlock-feature.png" alt="LetterLock Feature"></a>
       </div>
 
       <!-- ----------------------------- Stockwise ----------------------------- -->
@@ -190,9 +161,9 @@
         </div>
       </div>
 
-      <div style="width: 100%; display: flex; justify-content: center;" class="sm:mt-12">
+      <!-- <div style="width: 100%; display: flex; justify-content: center;" class="sm:mt-12">
         <a href="https://apps.apple.com/au/app/stockwise/id6444794675" target="_blank" class="feature-image"><img style="width: 100%;" src="./assets/images/stockwise-feature.png" alt="Stockwise logo"></a>
-      </div>
+      </div> -->
 
       <!-- ----------------------------- Spotpass ----------------------------- -->
 
@@ -231,41 +202,130 @@
           <h1 @click="scrollTo('projectPage')" style="font-weight: 100;">Projects</h1>
         </div>
         <div class="project-cards">
-          <div class="project-card project-card-left">
-            <div class="project-image-content">
-              <img src="./assets/images/togather-1.png" alt="">
-              <div class="project-image-overlay hidden sm:block"></div>
+          <!-- LETTERLOCK -->
+          <div class="project-card experience-card experience-card-left mt-20">
+            <div class="w-full flex justify-center items-center gap-x-4">
+              <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" target="_blank">
+                <img class="w-80 experience-logo rounded-lg sm:rounded-xl" src="./assets/images/letterlock-feature.png" alt="Letterlock logo">
+              </a>
+              <h2 class="text-3xl sm:hidden" style="font-weight: 100;">LetterLock</h2>
             </div>
+
             <div class="project-text" style="z-index: 2">
-              <div class="project-text-left">
-                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span style="color: #A1C8FF;">ToGather</span> is a platform that allows groups and couples to easily plan activities together by consolidating activities, times and location all in one spot. </p>
+              <div class="experience-text-left">
+                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">
+                  <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" style="color: #A1C8FF;" target="_blank">LetterLock</a>
+                  is a mobile puzzle game available on iOS and Android.<br><br>
+                  It's a very fun and challenging original concept where letters must be shuffled to form the required words in limited moves.<br><br>
+                  I was the sole developer on this project and was responsible for the entire front end and back end development, as well as game design and marketing.
+                </p>
               </div>
-              <div class="project-skills-left hidden sm:flex">
-                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">JavaScript</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">DOM</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Meetup API</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">PostgreSQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
+              <div class="experience-skills-left hidden sm:block">
+                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'AWS Lambda', 'Capacitor', 'PostgreSQL', 'TailwindCSS', 'App Store', 'Play Store']">
+                  <span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;
+                </p>
+                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link">
+                  <span class="animated-underline animated-underline_type4">Figma</span>
+                </p>
               </div>
-              <h2 class="project-title-left" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">ToGather</h2>
+              <div class="experience-title-left">
+                <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">
+                  <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" style="color: white; text-decoration: none;" target="_blank">LetterLock</a>
+                </h2>
+                <p style="font-size: 12px; font-weight: 100;">May 2023 - Jul 2023</p>
+              </div>
             </div>
-            <div class="project-links hidden sm:flex">
-              <a href="https://github.com/Shivika-S/ToGather" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
+
+            <div class="experience-links hidden sm:flex">
+              <a href="https://github.com/sammyshows/" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
+              <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
             </div>
           </div>
 
-          <div class="project-card project-card-right">
-            <div class="project-links hidden sm:flex">
-              <a href="https://github.com/sammyshows/air_door" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
+          <!-- <div style="width: 100%; display: flex; justify-content: center;" class="sm:mt-12">
+            <a href="https://apps.apple.com/au/app/letterlock-puzzle/id6450538544" target="_blank" class="feature-image"><img style="width: 100%" src="./assets/images/letterlock-feature.png" alt="LetterLock Feature"></a>
+          </div> -->
+
+
+          <!-- UGC WITH CELINE -->
+          <div class="project-card experience-card experience-card-right mt-16 sm:mt-32">
+            <div class="experience-links hidden sm:flex">
+              <a href="https://github.com/sammyshows/" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
+              <a href="https://ugcwithceline.com" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
             </div>
-            <div class="project-text">
-              <div class="project-text-right">
-                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="https://airdoor.herokuapp.com/" style="color: #A1C8FF;" target="_blank">AirDoor</a> is an app that lets you book your next getaway anywhere in the world and lets you find your next visitor.</p>
+
+            <div class="project-text" style="z-index: 2">
+              <div class="experience-text-right">
+                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">
+                  With a passion for creative storytelling and a keen eye for detail, Celine helps brands connect with their audience through engaging and authentic content.
+                  <br><br>Whether it's through eye-catching photography or compelling videos, her goal is to bring each brand's unique voice to life and make it resonate with their target audience.
+                </p>
               </div>
-              <div class="project-skills-right hidden sm:flex">
-                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Ruby</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Ruby on Rails</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Mapbox API</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Cloudinary</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">PostgreSQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
+              <div class="experience-skills-right hidden sm:block" style="margin-bottom: 20px;">
+                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'TypeScript', 'TailwindCSS', 'SSR', 'Image/Video Optimisation']">
+                  <span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;
+                </p>
+                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link">
+                  <span class="animated-underline animated-underline_type4">Figma</span>
+                </p>
               </div>
-              <h2 class="project-title-right" style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://airdoor.herokuapp.com/" style="color: white; text-decoration: none;" target="_blank">AirDoor</a></h2>
+              <div class="experience-title-right">
+                <p style="font-size: 12px; font-weight: 100;">Apr 2022 - Sep 2022</p>
+                <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">
+                  <a href="https://ugcwithceline.com" style="color: white; text-decoration: none;" target="_blank">UGC with Celine</a>
+                </h2>
+              </div>
             </div>
-            <div class="project-image-content">
-              <img src="./assets/images/airdoor-1.png" alt="">
-              <a href="https://airdoor.herokuapp.com/" target="_blank"><div class="project-image-overlay hidden sm:block"></div></a>
+
+            <div class="w-full flex justify-center items-center gap-x-4">
+              <a href="https://ugcwithceline.com" target="_blank">
+                <img class="experience-logo" src="./assets/images/polaroid-collage.webp" alt="Stockwise logo">
+              </a>
+              <h2 class="text-3xl sm:hidden" style="font-weight: 100;">UGC with Celine</h2>
+            </div>
+          </div>
+
+
+
+           <!-- XEMBEE -->
+          <div class="project-card experience-card experience-card-left mt-20">
+            <div class="w-full flex justify-center items-center gap-x-4">
+              <a href="https://xembee.netlify.app" target="_blank">
+                <img class="experience-logo rounded-lg sm:rounded-xl" src="./assets/images/holographic-plant.png" alt="Letterlock logo">
+              </a>
+              <h2 class="text-3xl sm:hidden" style="font-weight: 100;">LetterLock</h2>
+            </div>
+
+            <div class="project-text" style="z-index: 2">
+              <div class="experience-text-left">
+                <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">
+                  <a href="https://xembee.netlify.app" style="color: #A1C8FF;" target="_blank">XEMBEE</a> 
+                  is pioneering the future of wind energy with cutting-edge wind panels that convert natural breezes into affordable, sustainable power. With over a decade of advanced research, XEMBEE leads the charge in transforming how we harness and utilize wind energy.
+                  <br><br>
+                  Their innovative solutions not only push the boundaries of traditional wind energy standards but also contribute positively to energy production while maintaining a minimal environmental footprint.
+                  <br><br>
+                  Inspired by nature, from bees to fish, and from birds to trees, XEMBEE's technology is designed to be durable, efficient, and adaptable to meet a variety of energy needs.
+                </p>
+              </div>
+              <div class="experience-skills-left hidden sm:block">
+                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'AWS Lambda', 'Capacitor', 'PostgreSQL', 'TailwindCSS', 'App Store', 'Play Store']">
+                  <span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;
+                </p>
+                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link">
+                  <span class="animated-underline animated-underline_type4">Figma</span>
+                </p>
+              </div>
+              <div class="experience-title-left">
+                <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;">
+                  <a href="https://xembee.netlify.app" style="color: white; text-decoration: none;" target="_blank">XEMBEE</a>
+                </h2>
+                <p style="font-size: 12px; font-weight: 100;">May 2023 - Jul 2023</p>
+              </div>
+            </div>
+
+            <div class="experience-links hidden sm:flex">
+              <a href="https://github.com/sammyshows/" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
+              <a href="https://xembee.netlify.app" target="_blank"><span class="iconify" data-icon="feather:external-link" data-inline="false"></span></a>
             </div>
           </div>
         </div>
