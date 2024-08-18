@@ -14,7 +14,6 @@
       <ul class="icon-links">
         <li><a href="https://github.com/sammyshows" target="_blank"><span class="iconify" data-icon="codicon:github-alt" data-inline="false"></span></a></li>
         <li><a href="https://www.linkedin.com/in/sam-mccarthy-dev/" target="_blank"><span class="iconify" data-icon="eva:linkedin-outline" data-inline="false"></span></a></li>
-        <li><a href="https://www.instagram.com/_sam_mccarthy/" target="_blank"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a></li>
       </ul>
     </div>
 
@@ -175,10 +174,16 @@
           <div class="experience-text-right">
             <p style="font-size: 13px; margin: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><a href="https://spotpass.com/" style="color: #A1C8FF;" target="_blank">Spotpass</a>
               is a micropayment system designed to allow everyone to get instant access to their favourite content for 99c or less.<br><br>
-              Being the sole Front End Developer at Spotpass, I was required to build applications from the ground up including our internal admin portal and producer portal. I would also add new features to and maintain our consumer flow.</p>
+              Being the sole Front End Developer at Spotpass, I was tasked with building applications from the ground up including our internal admin portal and producer portal. I was also responsible for adding new features to our web applications and maintaining our consumer flow.</p>
           </div>
           <div class="experience-skills-right hidden sm:block">
-            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Vue3</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TypeScript</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">GraphQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TailwindCSS</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Single-spa</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Scrum</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Netlify</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Browserstack</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p>
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Vue3', 'TypeScript', 'GraphQL', 'TailwindCSS', 'Single-spa', 'Scrum', 'Netlify', 'Browserstack']">
+              <span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;
+            </p>
+            <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link">
+              <span class="animated-underline animated-underline_type4">Figma</span>
+            </p>
+            <!-- <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);"><span class="r-link animated-underline animated-underline_type4">Vue3</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TypeScript</span>  &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">GraphQL</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">TailwindCSS</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Single-spa</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Scrum</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Netlify</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Browserstack</span> &nbsp;&nbsp;· &nbsp;&nbsp;<span class="r-link animated-underline animated-underline_type4">Figma</span></p> -->
           </div>
           <div class="experience-title-right">
             <h2 style="font-size: 45px; font-weight: 100; border-bottom: 3px #A1C8FF solid;"><a href="https://spotpass.com/" style="color: white; text-decoration: none;" target="_blank">Spotpass</a></h2>
@@ -221,7 +226,7 @@
                 </p>
               </div>
               <div class="experience-skills-left hidden sm:block">
-                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'AWS Lambda', 'Capacitor', 'PostgreSQL', 'TailwindCSS', 'App Store', 'Play Store']">
+                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'AWS Lambda', 'Capacitor', 'PostgreSQL', 'TailwindCSS', 'iOS', 'Android', 'App Store', 'Play Store']">
                   <span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;
                 </p>
                 <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link">
@@ -308,7 +313,7 @@
                 </p>
               </div>
               <div class="experience-skills-left hidden sm:block">
-                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'Node.js', 'TypeScript', 'AWS Lambda', 'Capacitor', 'PostgreSQL', 'TailwindCSS', 'App Store', 'Play Store']">
+                <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link" v-for="skill in ['Nuxt3', 'Vue3', 'TypeScript', 'PostgreSQL', 'TailwindCSS']">
                   <span class="animated-underline animated-underline_type4">{{ skill }}</span> &nbsp;&nbsp;· &nbsp;&nbsp;
                 </p>
                 <p style="font-size: 12px; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);" class="r-link">
@@ -691,7 +696,7 @@ export default defineComponent({
   }
 
   .icon-links {
-    height: 23vh;
+    height: 14vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -702,7 +707,7 @@ export default defineComponent({
     content: "";
     display: block;
     position: relative;
-    right: -4.1vw;
+    right: -25px;
     height: 15vh;
     width: 1px;
     background-color: #A1C8FF;
